@@ -1,0 +1,424 @@
+        /* Variables CSS pour les couleurs et autres styles réutilisables */
+        :root {
+            --primary-bg: #212121;
+            --secondary-bg: #212121;
+            --text-primary: #FFFFFF;
+            --text-secondary: #AAAAAA;
+            --accent-color: #FF6F00;
+            --male-color: #0044ff;
+            --female-color: #f91ba0;
+            --other-color: #7f7f7f;
+            --card-bg: #2d2d2d;
+            --unread-indicator: #FF6F00;
+        }
+
+        /* Styles globaux pour le corps de la page */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Conteneur principal de l'application */
+        .app-container {
+            width: 95%; 
+            max-width: 1000px; 
+            margin: 30px auto;
+            height: 600px; /* Hauteur fixe */
+            box-shadow: 0 10px 25px rgba(187, 184, 184, 0.3);
+            background-color: var(--secondary-bg); 
+            border-radius: 15px; 
+            position: relative; 
+            padding: 0; /* Suppression du padding */
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* Empêche le conteneur de s'agrandir */
+        }
+
+        .app-container::-webkit-scrollbar {
+            display: none; /* Pour Chrome, Safari et Opera */
+        }
+
+        /* En-tête des notifications */
+        .notifications-header {
+            background: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--secondary-bg);
+            flex-shrink: 0;
+        }
+
+        .notifications-header h1 {
+            font-size: 1.5em;
+            margin: 0;
+            color: var(--text-primary);
+        }
+
+        /* Bouton pour marquer toutes les notifications comme lues */
+        .btn-mark-all {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 1.2em;
+            cursor: pointer;
+            padding: 5px;
+            transition: all 0.2s;
+        }
+
+        .btn-mark-all:hover {
+            color: var(--accent-color);
+            transform: scale(1.1);
+        }
+
+        /* Liste des notifications */
+        .notifications-list {
+            padding: 10px;
+            height: calc(100% - 70px); /* Hauteur totale moins la hauteur de l'en-tête */
+            overflow-y: auto;
+            scrollbar-width: none; /* Pour Firefox */
+            -ms-overflow-style: none; /* Pour Internet Explorer et Edge */
+        }
+
+        .notifications-list::-webkit-scrollbar {
+            display: none; /* Pour Chrome, Safari et Opera */
+        }
+
+        /* Style pour chaque notification */
+        .notification {
+            display: flex;
+            align-items: flex-start;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            transition: all 0.2s;
+            position: relative;
+            cursor: pointer;
+            min-height: 80px; /* Hauteur minimale au lieu de hauteur fixe */
+        }
+
+        /* Indicateur pour les notifications non lues */
+        .notification.unread {
+            border-left: 4px solid var(--unread-indicator);
+        }
+
+        .notification:hover {
+            background-color: #3a3a3a;
+        }
+
+        /* Avatar de la notification */
+        .notification-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            font-weight: bold;
+            color: white;
+            flex-shrink: 0;
+            overflow: hidden; /* Pour s'assurer que l'image reste dans les limites */
+            background-color: var(--card-bg); /* Couleur de fond par défaut */
+        }
+
+        .notification-avatar img.avatar-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Pour s'assurer que l'image couvre bien tout l'espace */
+        }
+
+        .notification-avatar span {
+            font-size: 1.2em;
+        }
+
+        /* Couleurs pour les avatars en fonction du genre */
+        .notification-avatar.male {
+            background-color: var(--male-color);
+        }
+
+        .notification-avatar.female {
+            background-color: var(--female-color);
+        }
+
+        .notification-avatar.other {
+            background-color: var(--other-color);
+        }
+
+        .notification-avatar.group {
+            background-color: var(--other-color);
+        }
+
+        /* Contenu de la notification */
+        .notification-content {
+            flex-grow: 1;
+        }
+
+        .notification-text {
+            margin: 0 0 5px 0;
+            line-height: 1.4;
+        }
+
+        .notification-text strong {
+            color: var(--text-primary);
+        }
+
+        /* Aperçu du commentaire */
+        .comment-preview {
+            display: block;
+            margin-top: 5px;
+            padding: 8px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        /* Métadonnées de la notification (heure, durée) */
+        .notification-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.85em;
+            color: var(--text-secondary);
+        }
+
+        /* Bouton pour les actions sur la notification */
+        .notification-action {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 1em;
+            cursor: pointer;
+            padding: 5px;
+            margin-left: 10px;
+            transition: all 0.2s;
+            align-self: center;
+        }
+
+        .notification-action:hover {
+            color: var(--accent-color);
+            transform: scale(1.1);
+        }
+
+        /* Styles pour la barre de navigation en bas de la page */
+        .navbar { 
+            position: fixed; 
+            bottom: 0; 
+            left: 0; 
+            width: 100%; 
+            background-color: #2c2c2c; 
+            border-top: 1px solid #4a4a4a; 
+            display: flex; 
+            justify-content: space-around; 
+            align-items: center; 
+            padding: 8px 0; 
+            z-index: 1000; 
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); 
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            cursor: pointer;
+            padding: 5px 15px;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .nav-item.active {
+            color: var(--accent-color);
+        }
+
+        .nav-icon {
+            font-size: 1.4em;
+            margin-bottom: 5px;
+        }
+
+        .nav-text {
+            font-size: 0.8em;
+        }
+
+        .header-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Compteur de notifications non lues */
+        .unread-count {
+            background-color: var(--unread-indicator);
+            color: white;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        /* Badge de notifications non lues sur la barre de navigation */
+        .nav-item .unread-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: var(--unread-indicator);
+            color: white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.6em;
+            font-weight: bold;
+        }
+
+        /* Styles pour les tablettes */
+        @media (max-width: 1024px) {
+            .app-container {
+                width: 98%;
+                margin: 15px auto;
+                height: calc(100vh - 30px);
+            }
+
+            .notifications-header {
+                padding: 12px 15px;
+            }
+
+            .notifications-list {
+                height: calc(100% - 60px);
+            }
+        }
+
+        /* Styles pour les écrans de petite taille */
+        @media (max-width: 768px) {
+            .app-container {
+                width: 100%;
+                margin: 0;
+                border-radius: 0;
+                height: 100vh;
+            }
+
+            .notification {
+                padding: 12px;
+                min-height: 70px;
+            }
+
+            .notification-avatar {
+                width: 36px;
+                height: 36px;
+                margin-right: 12px;
+            }
+
+            .notification-text {
+                font-size: 0.95em;
+                line-height: 1.3;
+            }
+
+            .comment-preview {
+                margin-top: 8px;
+                padding: 8px;
+                font-size: 0.9em;
+            }
+
+            .navbar {
+                padding: 10px 0;
+            }
+
+            .nav-item {
+                padding: 5px 8px;
+            }
+        }
+
+        /* Styles pour les mobiles */
+        @media (max-width: 480px) {
+            .notifications-header h1 {
+                font-size: 1.2em;
+            }
+
+            .notification {
+                padding: 10px;
+                margin-bottom: 8px;
+            }
+
+            .notification-avatar {
+                width: 32px;
+                height: 32px;
+                margin-right: 10px;
+            }
+
+            .notification-text {
+                font-size: 0.9em;
+                line-height: 1.2;
+            }
+
+            .notification-meta {
+                font-size: 0.75em;
+            }
+
+            .comment-preview {
+                padding: 6px;
+                font-size: 0.85em;
+                margin-top: 6px;
+            }
+        }
+
+        /* Styles pour les très petits écrans */
+        @media (max-width: 320px) {
+            .notifications-header {
+                padding: 8px 10px;
+            }
+
+            .notifications-header h1 {
+                font-size: 1.1em;
+            }
+
+            .notification {
+                padding: 8px;
+            }
+
+            .notification-avatar {
+                width: 28px;
+                height: 28px;
+            }
+
+            .nav-text {
+                font-size: 0.65em;
+            }
+        }
+
+        /* Support pour les écrans en mode paysage */
+        @media (max-height: 600px) and (orientation: landscape) {
+            .app-container {
+                height: calc(100vh - 20px);
+            }
+
+            .notification {
+                min-height: 60px;
+                padding: 8px 12px;
+            }
+
+            .navbar {
+                padding: 5px 0;
+            }
+        }
+
+        /* Supprimer les styles de pagination */
+        .pagination,
+        .pagination-btn,
+        .pagination-info {
+            display: none;
+        }

@@ -1,0 +1,1055 @@
+/* ============================================= */
+/* Variables CSS */
+/* ============================================= */
+:root {
+    --primary-bg: #212121; /* Couleur de fond principale */
+    --secondary-bg: #212121; /* Couleur de fond secondaire */
+    --text-primary: #FFFFFF; /* Couleur du texte principal */
+    --text-secondary: #AAAAAA; /* Couleur du texte secondaire */
+    --accent-color: #FF6F00; /* Couleur d'accent (orange) */
+    --male-color: #0044ff; /* Couleur pour genre masculin */
+    --female-color: #FF6F00; /* Couleur pour genre féminin */
+    --other-color: #7f7f7f; /* Couleur pour autre genre */
+    --card-bg: #2d2d2d; /* Couleur de fond des cartes */
+}
+
+/* ============================================= */
+/* Styles globaux */
+/* ============================================= */
+body {
+    font-family: 'Roboto', sans-serif; /* Police de caractères */
+    background-color: var(--primary-bg); /* Utilisation de la variable */
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    min-height: 100vh; /* Hauteur minimale = viewport height */
+}
+
+/* Conteneur principal de l'application */
+.app-wrapper {
+    width: 95%;
+    max-width: 850px; /* Largeur maximale */
+    height: calc(80vh - 80px); /* Hauteur adaptée à la navbar */
+    margin-bottom: 70px; /* Espace pour la navbar */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(187, 184, 184, 0.3);
+    position: relative;
+}
+
+/* ============================================= */
+/* Barre de navigation */
+/* ============================================= */
+.navbar {
+    position: fixed; /* Fixée en bas de l'écran */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c2c2c; 
+    border-top: 1px solid #4a4a4a; 
+    display: flex;
+    justify-content: space-around; /* Répartition égale des éléments */
+    align-items: center;
+    padding: 8px 0;
+    z-index: 1000; /* Au-dessus des autres éléments */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Élément de navigation */
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-secondary);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    transition: all 0.2s; /* Animation douce */
+}
+
+/* État actif d'un élément de navigation */
+.nav-item.active {
+    color: var(--accent-color); /* Couleur d'accent */
+}
+
+/* Icône de navigation */
+.nav-icon {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+/* ============================================= */
+/* Contenu principal */
+/* ============================================= */
+.main-content {
+    flex-grow: 1; /* Prend tout l'espace disponible */
+    overflow-y: auto; /* Défilement vertical si nécessaire */
+    padding: 20px;
+    margin: 20px;
+    scroll-snap-type: y mandatory; /* Snap scroll */
+    padding-bottom: 50px;
+    /* Masquer la barre de scroll */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+/* Masquer la barre de scroll pour WebKit */
+.main-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* ============================================= */
+/* Carte audio */
+/* ============================================= */
+.audio-card {
+    min-height: calc(75vh - 150px);
+    padding: 15px;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    margin: 10px;
+    scroll-snap-align: start; /* Alignement pour le snap scroll */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacement entre les éléments */
+}
+
+/* Cadre utilisateur */
+.user-frame {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #212121;
+    border-radius: 8px;
+}
+
+/* Avatar utilisateur */
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Forme circulaire */
+    background-color: var(--text-secondary);
+    color: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Variations d'avatar par genre */
+.avatar.male {
+    background-color: #0044ff;
+    color: white;
+}
+
+.avatar.female {
+    background-color: #f91ba0;
+    color: white;
+}
+
+.avatar.other {
+    background-color: #7f7f7f;
+    color: white;
+}
+
+.username {
+    font-weight: bold;
+}
+
+/* Cadre audio */
+.audio-frame {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Contrôles audio */
+.audio-controls {
+    display: flex;
+    align-items: center;
+}
+
+/* Bouton play/pause */
+.play-pause-btn {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-right: 15px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Forme circulaire */
+    background-color: var(--accent-color);
+}
+
+/* Conteneur de la barre de progression */
+.audio-progress-container {
+    flex-grow: 1; /* Prend tout l'espace disponible */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Barre de progression */
+.audio-progress {
+    flex-grow: 1;
+    background-color: #444;
+    height: 5px;
+    border-radius: 2.5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Partie remplie de la barre de progression */
+.audio-progress-bar {
+    background-color: var(--accent-color);
+    height: 100%;
+    width: 0%; /* Initialement vide */
+    transition: width 0.1s linear; /* Animation fluide */
+}
+
+/* Affichage de la durée */
+.audio-duration {
+    font-size: 0.9em;
+    color: var(--text-primary);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3px 8px;
+    border-radius: 12px;
+    min-width: 40px;
+    text-align: center;
+}
+
+/* ============================================= */
+/* Actions (réactions, commentaires) */
+/* ============================================= */
+.actions-frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Conteneur des emojis */
+.emoji-container {
+    display: flex;
+    gap: 15px;
+}
+
+/* Bouton emoji */
+.emoji-btn {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Effet au survol */
+.emoji-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Animation pour le like */
+.emoji-btn.liked {
+    animation: pulse 0.5s ease;
+    filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.7));
+}
+
+/* Styles pour les emojis actifs */
+.emoji-btn.thumbs-down.active {
+    filter: drop-shadow(0 0 5px rgba(30, 144, 255, 0.7));
+}
+
+.emoji-btn.angry.active {
+    filter: drop-shadow(0 0 5px rgba(255, 69, 0, 0.7));
+}
+
+.emoji-btn.laugh.active {
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.7));
+}
+
+/* Animation de pulsation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+/* Animation de flottement */
+@keyframes float-up {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-50px); opacity: 0; }
+}
+
+/* Bouton d'action générique */
+.action-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.2s;
+}
+
+/* Effet au survol */
+.action-btn:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+/* ============================================= */
+/* Section commentaires */
+/* ============================================= */
+.comments-container {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    display: none; /* Caché par défaut */
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Classe pour afficher les commentaires */
+.comments-container.open {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Style d'un commentaire */
+.comment {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    animation: slideIn 0.3s ease;
+}
+
+/* Zone de saisie de commentaire */
+.comment-input-area {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+/* Champ de saisie */
+.comment-input {
+    flex-grow: 1;
+    background-color: var(--primary-bg);
+    border: 1px solid var(--secondary-bg);
+    color: var(--text-primary);
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    border: none;
+}
+
+/* Bouton d'envoi */
+.send-comment-btn {
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 0.9em;
+    transition: all 0.2s;
+}
+
+/* Effet au survol */
+.send-comment-btn:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
+
+/* Effet au clic */
+.send-comment-btn:active {
+    transform: scale(0.95);
+}
+
+/* Bouton pour afficher/masquer les commentaires */
+.toggle-comments-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+/* Effet au survol */
+.toggle-comments-btn:hover {
+    color: var(--accent-color);
+}
+
+/* ============================================= */
+/* Bouton d'enregistrement flottant */
+/* ============================================= */
+.floating-record {
+    position: fixed;
+    bottom: 80px; /* Au-dessus de la navbar */
+    left: 50%;
+    transform: translateX(-50%); /* Centrage horizontal */
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    animation: float 3s ease-in-out infinite; /* Animation de flottement */
+    transition: all 0.3s;
+}
+
+/* Effet au survol */
+.floating-record:hover {
+    transform: translateX(-50%) scale(1.1);
+}
+
+/* Icône du bouton */
+.floating-record i {
+    font-size: 1.5em;
+}
+
+/* ============================================= */
+/* Modal d'enregistrement */
+/* ============================================= */
+.recording-modal {
+    display: none; /* Caché par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    z-index: 2000; /* Au-dessus de tout */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteneur du modal */
+.recording-container {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Minuteur d'enregistrement */
+.recording-timer {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1em;
+    position: absolute;
+    bottom: 70px; /* Ajustez la position selon le besoin */
+    left: 50%;
+    transform: translateX(-50%);
+    display: none; /* Caché par défaut */
+}
+
+/* Contrôles d'enregistrement */
+.recording-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Bouton d'enregistrement */
+.recording-btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* Effet au survol */
+.recording-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Style du bouton stop */
+.recording-btn.stop {
+    background-color: #1E3A8A;
+}
+
+/* ============================================= */
+/* En-tête */
+/* ============================================= */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: black;
+    color: var(--accent-color);
+    z-index: 100;
+    position: sticky; /* Fixé en haut lors du défilement */
+    top: 0;
+}
+
+/* Logo */
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* Titre du flux */
+.feed-title {
+    font-size: 1.1em;
+    color: var(--text-secondary);
+}
+
+.search-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#search-bar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#search-input {
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 15px;
+    margin-right: 5px;
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+    width: 200px;
+}
+ .emoji-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            opacity: 0.6;
+            transition: all 0.2s ease;
+            margin-right: 8px;
+            padding: 0;
+            line-height: 1;
+        }
+        
+        .emoji-btn:hover {
+            transform: scale(1.2);
+            opacity: 1;
+        }
+        
+        .emoji-btn.active {
+            opacity: 1;
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+        }
+        
+        .reaction-card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 0 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 6px 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            min-width: 70px;
+            transition: all 0.3s ease;
+        }
+        
+        .reaction-card:has(.emoji-btn.active),
+        .reaction-card.active-card {
+            background-color: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .reaction-count {
+            font-weight: bold;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .emoji-container {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+        
+        /* Styles pour le bouton d'enregistrement */
+        .floating-record {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .floating-record.recording {
+            background-color: #e74c3c;
+            animation: pulse 1.5s infinite;
+        }
+        
+        .floating-record.recording i {
+            color: white;
+        }
+        
+        .recording-timer {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            display: none;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(231, 76, 60, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(231, 76, 60, 0);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .reaction-card {
+                margin: 0 4px;
+                padding: 5px 8px;
+            }
+            
+            .emoji-btn {
+                font-size: 18px;
+                margin-right: 6px;
+            }
+            
+            .reaction-count {
+                font-size: 12px;
+            }
+        }
+
+        /* Styles améliorés pour la barre de recherche */
+        .header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #search-bar {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(45, 45, 45, 0.8);
+            border-radius: 20px;
+            padding: 5px 10px;
+            margin: 0 10px;
+            position: static;
+            transform: none;
+        }
+
+        #search-input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #444;
+            border-radius: 15px;
+            margin-right: 5px;
+            background-color: #212121;
+            color: white;
+            width: 100%;
+        }
+
+        .feed-title {
+            text-align: right;
+        }
+
+/* ============================================= */
+/* Animations */
+/* ============================================= */
+@keyframes float {
+    0%, 100% { transform: translateY(0) translateX(-50%); }
+    50% { transform: translateY(-15px) translateX(-50%); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { 
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================= */
+/* Styles responsives */
+/* ============================================= */
+@media (max-width: 768px) {
+    /* Adaptations pour tablettes */
+    .app-wrapper {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+    /* ... autres adaptations ... */
+}
+
+@media (max-width: 480px) {
+    /* Adaptations pour mobiles */
+    .audio-progress-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    /* ... autres adaptations ... */
+}
+
+@media (max-width: 360px) {
+    /* Adaptations pour très petits écrans */
+    .emoji-container {
+        gap: 5px;
+    }
+    /* ... autres adaptations ... */
+}
+
+/* Styles pour les emojis sélectionnés */
+.emoji-btn.selected {
+    transform: scale(1.3) !important;
+    filter: drop-shadow(0 0 8px rgba(255, 111, 0, 0.7)) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Animation pour tous les emojis au survol */
+.emoji-btn:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease;
+}
+
+/* Styles spécifiques pour chaque type d'emoji sélectionné */
+.emoji-btn.like-btn.selected {
+    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.7)) !important;
+}
+
+.emoji-btn.thumbs-down-btn.selected {
+    filter: drop-shadow(0 0 8px rgba(30, 144, 255, 0.7)) !important;
+}
+
+.emoji-btn.angry-btn.selected {
+    filter: drop-shadow(0 0 8px rgba(255, 69, 0, 0.7)) !important;
+}
+
+.emoji-btn.laugh-btn.selected {
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.7)) !important;
+}
+
+/* Animation de pulsation pour les likes */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+/* Animation de flottement pour les cœurs */
+@keyframes float-up {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-50px); opacity: 0; }
+}
+
+/* ============================================= */
+/* Media Queries pour le Responsive Design */
+/* ============================================= */
+
+/* Grand écran (Desktop) */
+@media screen and (min-width: 1200px) {
+    .app-wrapper {
+        width: 90%;
+        max-width: 1100px;
+        height: calc(85vh - 80px);
+    }
+
+    .audio-card {
+        min-height: calc(80vh - 150px);
+        padding: 20px;
+    }
+
+    .main-content {
+        padding: 30px;
+    }
+}
+
+/* Tablette et petits écrans */
+@media screen and (max-width: 768px) {
+    .app-wrapper {
+        width: 100%;
+        height: calc(100vh - 60px);
+        margin-bottom: 60px;
+        border-radius: 0;
+    }
+
+    .main-content {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .audio-card {
+        min-height: calc(70vh - 120px);
+        padding: 12px;
+        margin: 8px;
+    }
+
+    .user-frame {
+        padding: 8px;
+    }
+
+    .nav-icon {
+        font-size: 1.2em;
+    }
+
+    .nav-text {
+        font-size: 0.8em;
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 480px) {
+    .app-wrapper {
+        width: 100%;
+        margin: 0;
+        height: calc(100vh - 55px);
+    }
+
+    .main-content {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .audio-card {
+        min-height: calc(65vh - 100px);
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .emoji-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 5px;
+    }
+
+    .emoji-btn {
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    .action-buttons {
+        gap: 10px;
+    }
+
+    .comment-input-area {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .comment-input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .send-comment-btn {
+        width: 100%;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1.2em;
+    }
+
+    .feed-title {
+        font-size: 1em;
+    }
+
+    .navbar {
+        padding: 5px 0;
+    }
+
+    .nav-item {
+        padding: 3px 10px;
+    }
+
+    .nav-icon {
+        font-size: 1.1em;
+        margin-bottom: 3px;
+    }
+
+    .nav-text {
+        font-size: 0.7em;
+    }
+
+    #search-bar {
+        width: 80%;
+        max-width: 250px;
+        padding: 3px;
+    }
+
+    #search-input {
+        width: calc(100% - 35px);
+        padding: 6px;
+        font-size: 0.9em;
+    }
+
+    .search-button {
+        font-size: 1em;
+        margin-right: 5px;
+    }
+
+    #submit-search {
+        padding: 4px 8px;
+        font-size: 0.8em;
+    }
+}
+
+/* Très petits écrans */
+@media screen and (max-width: 320px) {
+    .audio-card {
+        min-height: calc(60vh - 90px);
+        padding: 8px;
+        margin: 4px;
+    }
+
+    .emoji-container {
+        gap: 3px;
+    }
+
+    .emoji-btn {
+        padding: 4px;
+        font-size: 0.8em;
+    }
+
+    .nav-item {
+        padding: 2px 8px;
+    }
+
+    .nav-icon {
+        font-size: 1em;
+    }
+
+    .nav-text {
+        font-size: 0.6em;
+    }
+
+    #search-bar {
+        width: 70%;
+        max-width: 200px;
+    }
+
+    #search-input {
+        width: calc(100% - 30px);
+        padding: 4px;
+        font-size: 0.8em;
+    }
+
+    .search-button {
+        font-size: 0.9em;
+        margin-right: 3px;
+    }
+
+    #submit-search {
+        padding: 3px 6px;
+        font-size: 0.7em;
+    }
+}
+
+/* Orientation paysage sur mobile */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+    .app-wrapper {
+        height: calc(100vh - 45px);
+    }
+
+    .audio-card {
+        min-height: calc(85vh - 60px);
+    }
+
+    .navbar {
+        height: 45px;
+        padding: 0;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .nav-icon {
+        margin-bottom: 0;
+    }
+}
+
+/* Support pour les écrans à haute densité de pixels */
+@media screen and (-webkit-min-device-pixel-ratio: 2), 
+       screen and (min-resolution: 192dpi) {
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}

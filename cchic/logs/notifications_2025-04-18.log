@@ -1,0 +1,3370 @@
+[2025-04-18 01:49:02] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:49:02] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:49:02] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:49:02] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:49:02] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:49:13] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:49:13] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:49:13] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:49:13] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:49:13] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:49:29] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:49:29] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:49:29] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:49:29] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:49:29] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:50:20] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:50:20] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:50:20] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:50:20] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:50:20] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:52:10] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:52:10] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:52:10] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:52:10] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:52:10] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:52:22] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:52:22] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:52:22] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:52:22] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:52:22] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:52:24] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:52:24] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:52:24] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:52:24] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:52:24] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:52:29] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:52:29] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:52:29] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:52:29] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:52:29] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:52:30] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:52:30] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:52:30] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:52:30] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:52:30] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:52:32] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:52:32] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:52:32] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:52:32] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:52:32] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:53:33] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:53:33] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:53:33] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:53:33] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:53:33] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:53:59] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:53:59] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:53:59] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:53:59] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:53:59] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:54:04] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:54:04] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:54:04] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:54:04] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:54:04] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:54:14] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:54:14] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:54:14] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:54:14] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:54:14] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:55:14] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:55:14] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:55:14] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:55:14] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:55:14] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:56:02] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:56:02] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:56:02] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:56:02] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:56:02] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:56:49] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:56:49] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:56:49] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:56:49] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:56:49] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:56:59] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:56:59] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:56:59] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:56:59] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:56:59] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:57:59] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:57:59] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:57:59] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:57:59] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:57:59] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:58:59] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 01:58:59] [INFO] Connexion à la base de données réussie
+[2025-04-18 01:58:59] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 01:58:59] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 01:58:59] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:03:56] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 02:03:56] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:03:56] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:03:56] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:03:56] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:04:56] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 02:04:56] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:04:56] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:04:56] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:04:56] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:04:58] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 02:04:58] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:04:58] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:04:58] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:04:58] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:05:41] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 
+    [user_id] => non défini
+)
+
+[2025-04-18 02:05:41] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:05:41] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:05:41] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:05:41] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:07:05] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => non défini
+)
+
+[2025-04-18 02:07:05] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:07:05] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:07:05] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:07:05] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:07:08] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => non défini
+)
+
+[2025-04-18 02:07:08] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:07:08] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:07:08] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:07:08] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:07:12] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => non défini
+)
+
+[2025-04-18 02:07:12] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:07:12] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:07:12] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:07:12] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:09:05] [ERROR] Tentative d'accès sans session utilisateur
+Data: Array
+(
+    [session] => Array
+        (
+            [id_utilisateur] => 1
+            [user_id] => 
+            [nom_prenoms] => yves
+            [email] => yves@gmail.com
+            [is_admin] => 
+        )
+
+)
+
+[2025-04-18 02:09:08] [ERROR] Tentative d'accès sans session utilisateur
+Data: Array
+(
+    [session] => Array
+        (
+            [id_utilisateur] => 1
+            [user_id] => 
+            [nom_prenoms] => yves
+            [email] => yves@gmail.com
+            [is_admin] => 
+        )
+
+)
+
+[2025-04-18 02:09:54] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => non défini
+)
+
+[2025-04-18 02:09:54] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:09:54] [INFO] Table register vérifiée
+Data: Array
+(
+    [count] => 7
+)
+
+[2025-04-18 02:09:54] [INFO] Table audio vérifiée
+Data: Array
+(
+    [count] => 55
+)
+
+[2025-04-18 02:09:54] [INFO] Table comments vérifiée
+Data: Array
+(
+    [count] => 53
+)
+
+[2025-04-18 02:09:54] [INFO] Table shares vérifiée
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-18 02:09:54] [INFO] Table reactions vérifiée
+Data: Array
+(
+    [count] => 45
+)
+
+[2025-04-18 02:09:54] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+    [reactions] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+)
+
+[2025-04-18 02:09:54] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:09:54] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:09:57] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => non défini
+)
+
+[2025-04-18 02:09:57] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:09:57] [INFO] Table register vérifiée
+Data: Array
+(
+    [count] => 7
+)
+
+[2025-04-18 02:09:57] [INFO] Table audio vérifiée
+Data: Array
+(
+    [count] => 55
+)
+
+[2025-04-18 02:09:57] [INFO] Table comments vérifiée
+Data: Array
+(
+    [count] => 53
+)
+
+[2025-04-18 02:09:57] [INFO] Table shares vérifiée
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-18 02:09:57] [INFO] Table reactions vérifiée
+Data: Array
+(
+    [count] => 45
+)
+
+[2025-04-18 02:09:57] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+    [reactions] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+)
+
+[2025-04-18 02:09:57] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:09:57] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:10:02] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => non défini
+)
+
+[2025-04-18 02:10:02] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:10:02] [INFO] Table register vérifiée
+Data: Array
+(
+    [count] => 7
+)
+
+[2025-04-18 02:10:02] [INFO] Table audio vérifiée
+Data: Array
+(
+    [count] => 55
+)
+
+[2025-04-18 02:10:02] [INFO] Table comments vérifiée
+Data: Array
+(
+    [count] => 53
+)
+
+[2025-04-18 02:10:02] [INFO] Table shares vérifiée
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-18 02:10:02] [INFO] Table reactions vérifiée
+Data: Array
+(
+    [count] => 45
+)
+
+[2025-04-18 02:10:02] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+    [reactions] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+)
+
+[2025-04-18 02:10:02] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:10:02] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:11:02] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => non défini
+)
+
+[2025-04-18 02:11:02] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:11:02] [INFO] Table register vérifiée
+Data: Array
+(
+    [count] => 7
+)
+
+[2025-04-18 02:11:02] [INFO] Table audio vérifiée
+Data: Array
+(
+    [count] => 55
+)
+
+[2025-04-18 02:11:02] [INFO] Table comments vérifiée
+Data: Array
+(
+    [count] => 53
+)
+
+[2025-04-18 02:11:02] [INFO] Table shares vérifiée
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-18 02:11:02] [INFO] Table reactions vérifiée
+Data: Array
+(
+    [count] => 45
+)
+
+[2025-04-18 02:11:02] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+    [reactions] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+)
+
+[2025-04-18 02:11:02] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:11:02] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:11:41] [ERROR] Tentative d'accès sans session utilisateur
+Data: Array
+(
+    [session] => Array
+        (
+            [id_utilisateur] => 1
+            [user_id] => 
+            [nom_prenoms] => yves
+            [email] => yves@gmail.com
+            [is_admin] => 
+        )
+
+)
+
+[2025-04-18 02:11:42] [ERROR] Tentative d'accès sans session utilisateur
+Data: Array
+(
+    [session] => Array
+        (
+            [id_utilisateur] => 1
+            [user_id] => 
+            [nom_prenoms] => yves
+            [email] => yves@gmail.com
+            [is_admin] => 
+        )
+
+)
+
+[2025-04-18 02:11:58] [ERROR] Tentative d'accès sans session utilisateur
+Data: Array
+(
+    [session] => Array
+        (
+            [id_utilisateur] => 1
+            [user_id] => 
+            [nom_prenoms] => yves
+            [email] => yves@gmail.com
+            [is_admin] => 
+        )
+
+)
+
+[2025-04-18 02:12:06] [ERROR] Tentative d'accès sans session utilisateur
+Data: Array
+(
+    [session] => Array
+        (
+            [id_utilisateur] => 1
+            [user_id] => 
+            [nom_prenoms] => yves
+            [email] => yves@gmail.com
+            [is_admin] => 
+        )
+
+)
+
+[2025-04-18 02:12:13] [ERROR] Tentative d'accès sans session utilisateur
+Data: Array
+(
+    [session] => Array
+        (
+            [id_utilisateur] => 1
+            [user_id] => 
+            [nom_prenoms] => yves
+            [email] => yves@gmail.com
+            [is_admin] => 
+        )
+
+)
+
+[2025-04-18 02:13:06] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => non défini
+)
+
+[2025-04-18 02:13:06] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:13:06] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:13:06] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:13:06] [ERROR] Utilisateur non trouvé dans la base de données
+Data: Array
+(
+    [user_id] => 
+)
+
+[2025-04-18 02:15:19] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 02:15:19] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:15:19] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 53
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:15:19] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 02:15:19] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-18 02:15:19] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 17
+)
+
+[2025-04-18 02:17:05] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 02:17:05] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:17:05] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 56
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 54
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:17:05] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 02:17:05] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-18 02:17:05] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 18
+)
+
+[2025-04-18 02:18:33] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 02:18:33] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:18:33] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 56
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 54
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:18:33] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 02:18:33] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-18 02:18:33] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 18
+)
+
+[2025-04-18 02:18:36] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 02:18:36] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:18:36] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 56
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 54
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:18:36] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 02:18:36] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-18 02:18:36] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 18
+)
+
+[2025-04-18 02:18:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 02:18:53] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:18:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 56
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 54
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:18:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 02:18:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-18 02:18:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 18
+)
+
+[2025-04-18 02:19:50] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 02:19:50] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:19:50] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 56
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 54
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:19:50] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 02:19:50] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => Jean Yves
+        )
+
+)
+
+[2025-04-18 02:19:50] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 18
+)
+
+[2025-04-18 02:24:24] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 02:24:24] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:24:24] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 56
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 54
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:24:24] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 02:24:24] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => Kouame kouakou Malick
+        )
+
+)
+
+[2025-04-18 02:24:24] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 18
+)
+
+[2025-04-18 02:25:55] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 02:25:55] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:25:55] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 56
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 54
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:25:55] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 02:25:55] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-18 02:25:55] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 18
+)
+
+[2025-04-18 02:30:52] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 02:30:52] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:30:52] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 56
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 54
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:30:52] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 02:30:52] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-18 02:30:52] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 18
+)
+
+[2025-04-18 02:30:59] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 02:30:59] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:30:59] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 56
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 54
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:30:59] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 02:30:59] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-18 02:30:59] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 18
+)
+
+[2025-04-18 02:38:03] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 02:38:03] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:38:03] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 56
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 54
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:38:03] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 02:38:03] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-18 02:38:03] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 18
+)
+
+[2025-04-18 02:39:24] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 02:39:24] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:39:24] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 57
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 54
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:39:24] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 02:39:24] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-18 02:39:24] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 19
+)
+
+[2025-04-18 02:42:31] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 11
+)
+
+[2025-04-18 02:42:31] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:42:31] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 57
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 54
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:42:31] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 11
+)
+
+[2025-04-18 02:42:31] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 11
+            [nom_prenoms] => justine
+        )
+
+)
+
+[2025-04-18 02:42:31] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 8
+)
+
+[2025-04-18 02:45:06] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 11
+)
+
+[2025-04-18 02:45:06] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:45:06] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 57
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 54
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:45:06] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 11
+)
+
+[2025-04-18 02:45:06] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 11
+            [nom_prenoms] => justine
+        )
+
+)
+
+[2025-04-18 02:45:06] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 8
+)
+
+[2025-04-18 02:51:43] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 11
+)
+
+[2025-04-18 02:51:43] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:51:43] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 57
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 54
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:51:43] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 11
+)
+
+[2025-04-18 02:51:43] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 11
+            [nom_prenoms] => justine Moya
+        )
+
+)
+
+[2025-04-18 02:51:43] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 8
+)
+
+[2025-04-18 02:55:18] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => epc2sur784ii89oathb591vvbm
+    [user_id] => 15
+)
+
+[2025-04-18 02:55:18] [INFO] Connexion à la base de données réussie
+[2025-04-18 02:55:18] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 57
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 54
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 12
+        )
+
+)
+
+[2025-04-18 02:55:18] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 15
+)
+
+[2025-04-18 02:55:18] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 15
+            [nom_prenoms] => David
+        )
+
+)
+
+[2025-04-18 02:55:18] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 9
+)
+
+[2025-04-18 03:03:19] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 11
+)
+
+[2025-04-18 03:03:19] [INFO] Connexion à la base de données réussie
+[2025-04-18 03:03:19] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 57
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-18 03:03:19] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 11
+)
+
+[2025-04-18 03:03:19] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 11
+            [nom_prenoms] => justine Moya
+        )
+
+)
+
+[2025-04-18 03:03:19] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 8
+)
+
+[2025-04-18 03:05:45] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 11
+)
+
+[2025-04-18 03:05:45] [INFO] Connexion à la base de données réussie
+[2025-04-18 03:05:45] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 57
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-18 03:05:45] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 11
+)
+
+[2025-04-18 03:05:45] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 11
+            [nom_prenoms] => Justine Blé
+        )
+
+)
+
+[2025-04-18 03:05:45] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 8
+)
+
+[2025-04-18 03:05:48] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 11
+)
+
+[2025-04-18 03:05:48] [INFO] Connexion à la base de données réussie
+[2025-04-18 03:05:48] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 57
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-18 03:05:48] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 11
+)
+
+[2025-04-18 03:05:48] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 11
+            [nom_prenoms] => Justine Blé
+        )
+
+)
+
+[2025-04-18 03:05:48] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 8
+)
+
+[2025-04-18 03:13:17] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 11
+)
+
+[2025-04-18 03:13:17] [INFO] Connexion à la base de données réussie
+[2025-04-18 03:13:17] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 57
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-18 03:13:17] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 11
+)
+
+[2025-04-18 03:13:17] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 11
+            [nom_prenoms] => Justine Blé
+        )
+
+)
+
+[2025-04-18 03:13:17] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 8
+)
+
+[2025-04-18 03:13:20] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 11
+)
+
+[2025-04-18 03:13:20] [INFO] Connexion à la base de données réussie
+[2025-04-18 03:13:20] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 57
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-18 03:13:20] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 11
+)
+
+[2025-04-18 03:13:20] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 11
+            [nom_prenoms] => Justine Blé
+        )
+
+)
+
+[2025-04-18 03:13:20] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 8
+)
+
+[2025-04-18 03:30:36] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 11
+)
+
+[2025-04-18 03:30:36] [INFO] Connexion à la base de données réussie
+[2025-04-18 03:30:36] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 57
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-18 03:30:36] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 11
+)
+
+[2025-04-18 03:30:36] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 11
+            [nom_prenoms] => Justine Blé
+        )
+
+)
+
+[2025-04-18 03:30:36] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 8
+)
+
+[2025-04-18 03:31:45] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 03:31:45] [INFO] Connexion à la base de données réussie
+[2025-04-18 03:31:45] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 57
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-18 03:31:45] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 03:31:45] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-18 03:31:45] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 19
+)
+
+[2025-04-18 03:32:58] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 03:32:58] [INFO] Connexion à la base de données réussie
+[2025-04-18 03:32:58] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 57
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-18 03:32:58] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 03:32:58] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-18 03:32:58] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 19
+)
+
+[2025-04-18 03:33:09] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 03:33:09] [INFO] Connexion à la base de données réussie
+[2025-04-18 03:33:09] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 57
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-18 03:33:09] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 03:33:09] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-18 03:33:09] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 19
+)
+
+[2025-04-18 03:33:21] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => dngftc06i7olven78l7jci7er2
+    [user_id] => 10
+)
+
+[2025-04-18 03:33:21] [INFO] Connexion à la base de données réussie
+[2025-04-18 03:33:21] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 57
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 55
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-18 03:33:21] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-18 03:33:21] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-18 03:33:21] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 19
+)
+

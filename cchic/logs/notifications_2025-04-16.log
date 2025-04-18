@@ -1,0 +1,2926 @@
+[2025-04-16 11:28:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 11:28:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 11:28:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 38
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 18
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 5
+        )
+
+)
+
+[2025-04-16 11:28:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 11:28:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 11:28:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 4
+)
+
+[2025-04-16 11:59:48] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 11:59:48] [INFO] Connexion à la base de données réussie
+[2025-04-16 11:59:48] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 39
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 19
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 6
+        )
+
+)
+
+[2025-04-16 11:59:48] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 11:59:48] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 11:59:48] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 5
+)
+
+[2025-04-16 12:58:35] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 12:58:35] [INFO] Connexion à la base de données réussie
+[2025-04-16 12:58:35] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 42
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 22
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 12:58:35] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 12:58:35] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 12:58:35] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 8
+)
+
+[2025-04-16 13:46:28] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 13:46:28] [INFO] Connexion à la base de données réussie
+[2025-04-16 13:46:28] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 46
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 27
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 13:46:28] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 13:46:28] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 13:46:28] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 13:53:15] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 13:53:15] [INFO] Connexion à la base de données réussie
+[2025-04-16 13:53:15] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 46
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 27
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 13:53:15] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 13:53:15] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 13:53:15] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 13:53:21] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 13:53:21] [INFO] Connexion à la base de données réussie
+[2025-04-16 13:53:21] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 46
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 27
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 13:53:21] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 13:53:21] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 13:53:21] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 13:53:22] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 13:53:22] [INFO] Connexion à la base de données réussie
+[2025-04-16 13:53:22] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 46
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 27
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 13:53:22] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 13:53:22] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 13:53:22] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 13:53:24] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 13:53:24] [INFO] Connexion à la base de données réussie
+[2025-04-16 13:53:24] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 46
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 27
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 13:53:24] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 13:53:24] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 13:53:24] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 13:56:23] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 13:56:23] [INFO] Connexion à la base de données réussie
+[2025-04-16 13:56:23] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 46
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 27
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 13:56:23] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 13:56:23] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 13:56:23] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 13:58:37] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 13:58:37] [INFO] Connexion à la base de données réussie
+[2025-04-16 13:58:37] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 46
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 27
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 13:58:37] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 13:58:37] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 13:58:37] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:02:09] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:02:09] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:02:09] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 46
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:02:09] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:02:09] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:02:09] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:03:23] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:03:23] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:03:23] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 46
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:03:23] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:03:23] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:03:23] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:06:20] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:06:20] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:06:20] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 46
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:06:20] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:06:20] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:06:20] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:06:20] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:06:20] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:06:20] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:06:34] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:06:34] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:06:34] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 46
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:06:34] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:06:34] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:06:34] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:06:37] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:06:37] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:06:37] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 46
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:06:37] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:06:37] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:06:37] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:06:37] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:06:37] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:06:37] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:08:09] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:08:09] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:08:09] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:08:09] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:08:09] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:08:09] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:10:23] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:10:23] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:10:23] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:10:23] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:10:23] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:10:23] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:10:27] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:10:27] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:10:27] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:10:27] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:10:27] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:10:27] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:12:03] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:12:03] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:12:03] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:12:03] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:12:03] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:12:03] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:12:13] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:12:13] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:12:13] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:12:13] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:12:13] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:12:13] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:45] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:45] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:45] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:45] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:45] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:45] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:49] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:49] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:49] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:49] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:49] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:49] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:50] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:50] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:50] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:50] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:50] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:50] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:53] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:53] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:53] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:53] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:13:58] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:58] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:13:58] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:13:58] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:13:58] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:13:58] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:14:19] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:14:19] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:14:19] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:14:19] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:14:19] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:14:19] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:14:23] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:14:23] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:14:23] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 28
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:14:23] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:14:23] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:14:23] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:15:06] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 5uvtch8boqbnsu8rflo8fikjmc
+    [user_id] => 16
+)
+
+[2025-04-16 14:15:06] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:15:06] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 29
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:15:06] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 16
+)
+
+[2025-04-16 14:15:06] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 16
+            [nom_prenoms] => josée
+        )
+
+)
+
+[2025-04-16 14:15:06] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 1
+)
+
+[2025-04-16 14:16:58] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:16:58] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:16:58] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 29
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:16:58] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:16:58] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:16:58] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:29:04] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:29:04] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:29:04] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 29
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:29:04] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:29:04] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:29:04] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 14:29:21] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 14:29:21] [INFO] Connexion à la base de données réussie
+[2025-04-16 14:29:21] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 30
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 8
+        )
+
+)
+
+[2025-04-16 14:29:21] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 14:29:21] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 14:29:21] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 15:42:55] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 2b9os89s5sh88l3br0bmj25tju
+    [user_id] => 10
+)
+
+[2025-04-16 15:42:55] [INFO] Connexion à la base de données réussie
+[2025-04-16 15:42:55] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 45
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 31
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 9
+        )
+
+)
+
+[2025-04-16 15:42:55] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-16 15:42:55] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => yves
+        )
+
+)
+
+[2025-04-16 15:42:55] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 12
+)
+
+[2025-04-16 15:45:25] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 5uvtch8boqbnsu8rflo8fikjmc
+    [user_id] => 16
+)
+
+[2025-04-16 15:45:25] [INFO] Connexion à la base de données réussie
+[2025-04-16 15:45:25] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 46
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 31
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 9
+        )
+
+)
+
+[2025-04-16 15:45:25] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 16
+)
+
+[2025-04-16 15:45:25] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 16
+            [nom_prenoms] => josée
+        )
+
+)
+
+[2025-04-16 15:45:25] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 1
+)
+
+[2025-04-16 15:45:30] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => 5uvtch8boqbnsu8rflo8fikjmc
+    [user_id] => 16
+)
+
+[2025-04-16 15:45:30] [INFO] Connexion à la base de données réussie
+[2025-04-16 15:45:30] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 46
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 31
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 9
+        )
+
+)
+
+[2025-04-16 15:45:30] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 16
+)
+
+[2025-04-16 15:45:30] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 16
+            [nom_prenoms] => josée
+        )
+
+)
+
+[2025-04-16 15:45:30] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 1
+)
+
