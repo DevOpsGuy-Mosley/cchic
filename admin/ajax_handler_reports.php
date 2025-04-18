@@ -62,6 +62,14 @@ switch ($input["action"]) {
                 // Vérifiez si la table audio existe avant de tenter de supprimer
                 $audioTableExists = $pdo->query("SHOW TABLES LIKE 'audio'")->rowCount() > 0;
                 if ($audioTableExists) {
+                    // D'abord supprimer les commentaires associés
+                    $commentsTableExists = $pdo->query("SHOW TABLES LIKE 'comments'")->rowCount() > 0;
+                    if ($commentsTableExists) {
+                        $deleteCommentsStmt = $pdo->prepare("DELETE FROM comments WHERE audio_id = ?");
+                        $deleteCommentsStmt->execute([$input["audio_id"]]);
+                    }
+                    
+                    // Ensuite supprimer l'audio
                     $audioStmt = $pdo->prepare("DELETE FROM audio WHERE id = ?");
                     $audioStmt->execute([$input["audio_id"]]);
                 }

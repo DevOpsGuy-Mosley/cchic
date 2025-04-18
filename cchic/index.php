@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="formulaire.css"> <!-- CSS personnalisé -->
 </head>
 <body>
-    <!-- Corps principal du document HTML -->
-
+   
     <!-- Conteneur principal de la page d'accueil -->
     <div class="container text-center mt-5" id="welcomeContainer"> <!-- Conteneur centré avec marge supérieure -->
         <img src="Logo.png" alt="C'chic Logo" class="img-fluid logo">
@@ -24,6 +23,7 @@
         <div class="mb-4"> 
             <a href="login.php" class="btn btn-warning btn-lg mx-4">Se Connecter</a>
             <a href="register.php" class="btn btn-primary btn-lg mx-4">S'inscrire</a>
+            <a href="about_me.php" class="btn btn-warning btn-lg mx-4" title="À propos"><i class="fas fa-user"></i></a>
         </div>
 
         <p class="lead">Venez rigoler 😂</p>

@@ -1,0 +1,420 @@
+[2025-04-19 00:00:34] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => tnv8j1ipm26atkncud4eo8tvv4
+    [user_id] => 10
+)
+
+[2025-04-19 00:00:34] [INFO] Connexion à la base de données réussie
+[2025-04-19 00:00:34] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 61
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 66
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-19 00:00:34] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-19 00:00:34] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => Yves Kessié
+        )
+
+)
+
+[2025-04-19 00:00:34] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 22
+)
+
+[2025-04-19 00:01:17] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => tnv8j1ipm26atkncud4eo8tvv4
+    [user_id] => 10
+)
+
+[2025-04-19 00:01:17] [INFO] Connexion à la base de données réussie
+[2025-04-19 00:01:17] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 61
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 66
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-19 00:01:17] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-19 00:01:17] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => Yves Kessié
+        )
+
+)
+
+[2025-04-19 00:01:17] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 22
+)
+
+[2025-04-19 00:39:34] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => tnv8j1ipm26atkncud4eo8tvv4
+    [user_id] => 10
+)
+
+[2025-04-19 00:39:34] [INFO] Connexion à la base de données réussie
+[2025-04-19 00:39:34] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 62
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 67
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-19 00:39:34] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-19 00:39:34] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => Yves Kessié
+        )
+
+)
+
+[2025-04-19 00:39:34] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 22
+)
+
+[2025-04-19 00:43:56] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => tnv8j1ipm26atkncud4eo8tvv4
+    [user_id] => 10
+)
+
+[2025-04-19 00:43:56] [INFO] Connexion à la base de données réussie
+[2025-04-19 00:43:56] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 62
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 67
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-19 00:43:56] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-19 00:43:56] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => Yves Kessié
+        )
+
+)
+
+[2025-04-19 00:43:56] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 22
+)
+
+[2025-04-19 00:44:00] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => tnv8j1ipm26atkncud4eo8tvv4
+    [user_id] => 10
+)
+
+[2025-04-19 00:44:00] [INFO] Connexion à la base de données réussie
+[2025-04-19 00:44:00] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 62
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 67
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-19 00:44:00] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-19 00:44:00] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => Yves Kessié
+        )
+
+)
+
+[2025-04-19 00:44:00] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 22
+)
+
+[2025-04-19 00:44:02] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => tnv8j1ipm26atkncud4eo8tvv4
+    [user_id] => 10
+)
+
+[2025-04-19 00:44:02] [INFO] Connexion à la base de données réussie
+[2025-04-19 00:44:02] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 62
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 67
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-19 00:44:02] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-19 00:44:02] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => Yves Kessié
+        )
+
+)
+
+[2025-04-19 00:44:02] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 22
+)
+
+[2025-04-19 00:44:48] [INFO] Démarrage de la page notifications
+Data: Array
+(
+    [session_id] => tnv8j1ipm26atkncud4eo8tvv4
+    [user_id] => 10
+)
+
+[2025-04-19 00:44:49] [INFO] Connexion à la base de données réussie
+[2025-04-19 00:44:49] [INFO] État des tables de la base de données
+Data: Array
+(
+    [register] => Array
+        (
+            [exists] => 1
+            [count] => 7
+        )
+
+    [audio] => Array
+        (
+            [exists] => 1
+            [count] => 62
+        )
+
+    [comments] => Array
+        (
+            [exists] => 1
+            [count] => 67
+        )
+
+    [shares] => Array
+        (
+            [exists] => 1
+            [count] => 13
+        )
+
+)
+
+[2025-04-19 00:44:49] [INFO] Début de la récupération des notifications
+Data: Array
+(
+    [user_id] => 10
+)
+
+[2025-04-19 00:44:49] [INFO] Utilisateur trouvé
+Data: Array
+(
+    [user] => Array
+        (
+            [id] => 10
+            [nom_prenoms] => Yves Kessié
+        )
+
+)
+
+[2025-04-19 00:44:49] [INFO] Nombre d'audios trouvés
+Data: Array
+(
+    [count] => 22
+)
+

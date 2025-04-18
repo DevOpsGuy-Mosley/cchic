@@ -142,7 +142,8 @@ try {
 }
 
 // Récupération des informations de l'utilisateur
-$userId = $_SESSION['user_id'];
+$userId = isset($_GET['user_id']) ? $_GET['user_id'] : $_SESSION['user_id'];
+$isOwnProfile = $userId == $_SESSION['user_id'];
 
 // Récupération des audios de l'utilisateur
 $stmt = $pdo->prepare("
@@ -170,7 +171,7 @@ try {
         $genreClass = strtolower($userInfo['genre']); // 'male', 'female' ou 'other'
         $photoUrl = $userInfo['photo_profil'] ? 'uploads/profile_photos/' . $userInfo['photo_profil'] : '';
     } else {
-        header('Location: logout.php');
+        header('Location: home.php');
         exit();
     }
 } catch (PDOException $e) {
@@ -204,10 +205,43 @@ try {
         .profile-stats-section.hidden {
             display: none;
         }
+
+        .audio-title-date {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+        }
+
+        .separator {
+            color: #888;
+            font-weight: normal;
+        }
+
+        .audio-title {
+            margin: 0;
+            font-size: 1.1em;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .audio-published-time {
+            margin: 0;
+            color: #888;
+            font-size: 0.9em;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <div class="app-container">
+        <div class="profile-header">
+            <a href="home.php" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Retour
+            </a>
+        </div>
 
         <header class="profile-header-container">
             <div class="profile-identity">
@@ -224,11 +258,36 @@ try {
                 <p id="description-text"><?php echo htmlspecialchars($userInfo['description'] ?? ''); ?></p>
             </div>
             <div class="profile-actions">
-                <button class="btn-edit-profile" onclick="toggleEditProfile()">
-                    <i class="fas fa-pencil-alt" style="margin-right: 8px;"></i> Modifier
-                </button>
+                <?php if ($isOwnProfile): ?>
+                    <button class="btn-edit-profile" onclick="toggleEditProfile()">
+                        <i class="fas fa-pencil-alt" style="margin-right: 8px;"></i> Modifier
+                    </button>
+                <?php endif; ?>
             </div>
         </header>
+
+        <section class="profile-stats">
+            <div class="stat-item">
+                <i class="fas fa-thumbs-up"></i>
+                <span class="stat-value"><?= array_sum(array_column($userAudios, 'like_count')) ?></span>
+                <span class="stat-label">J'aime</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-thumbs-down"></i>
+                <span class="stat-value"><?= array_sum(array_column($userAudios, 'dislike_count')) ?></span>
+                <span class="stat-label">J'aime pas</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-laugh"></i>
+                <span class="stat-value"><?= array_sum(array_column($userAudios, 'laugh_count')) ?></span>
+                <span class="stat-label">Rires</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-comment"></i>
+                <span class="stat-value"><?= array_sum(array_column($userAudios, 'comment_count')) ?></span>
+                <span class="stat-label">Commentaires</span>
+            </div>
+        </section>
 
         <section class="edit-profile-section" id="edit-profile-section">
              <div class="edit-profile-fields">
@@ -333,6 +392,10 @@ try {
                         <p>Vous n'avez pas encore publié d'audio</p>
                     </div>
                 <?php else: ?>
+                    <div class="audio-list-loading" style="display: none;">
+                        <div class="loading-spinner"></div>
+                        <p>Chargement des audios...</p>
+                    </div>
                     <?php foreach ($userAudios as $audio): ?>
                         <div class="audio-item" data-audio-id="<?php echo htmlspecialchars($audio['id']); ?>" data-audio-path="<?php echo htmlspecialchars($audio['notevocale']); ?>">
                             <div class="audio-main-content">
@@ -341,19 +404,16 @@ try {
                                     <i class="fas fa-play audio-play-icon"></i>
                                 </div>
                                 <div class="audio-info">
-                                    <h3 class="audio-title"><?php echo htmlspecialchars($audio['title'] ?? 'Sans titre'); ?></h3>
-                                    <div class="audio-stats-actions">
-                                        <div class="audio-stats">
-                                            <span><i class="fas fa-heart"></i><?php echo htmlspecialchars($audio['like_count']); ?></span>
-                                            <span><i class="fas fa-comment"></i><?php echo htmlspecialchars($audio['comment_count']); ?></span>
-                                        </div>
+                                    <div class="audio-title-date">
+                                        <h3 class="audio-title">Titre : <?php echo htmlspecialchars($audio['title'] ?? 'Sans titre'); ?></h3>
+                                        <span class="separator">|</span>
+                                        <p class="audio-published-time">
+                                            <?php 
+                                            $date = new DateTime($audio['datenote']);
+                                            echo 'Publié le ' . $date->format('d/m/Y à H:i');
+                                            ?>
+                                        </p>
                                     </div>
-                                    <p class="audio-published-time">
-                                        <?php 
-                                        $date = new DateTime($audio['datenote']);
-                                        echo 'Publié le ' . $date->format('d/m/Y à H:i');
-                                        ?>
-                                    </p>
                                 </div>
                             </div>
                             <div class="audio-actions">

@@ -42,14 +42,17 @@ body {
     background-color: var(--primary-bg);
     color: var(--text-primary);
     line-height: 1.6;
-    padding-bottom: 80px; /* Espace pour la navbar */
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 80px; /* Hauteur de la navbar */
 }
 
 .app-container {
     width: 95%;
-    max-width: 800px;
-    margin: 50px auto;
+    max-width: 1000px;
+    margin: 20px auto;
     box-shadow: 0 10px 25px rgba(187, 184, 184, 0.3);
     background-color: var(--secondary-bg);
     border-radius: var(--border-radius-lg);
@@ -60,13 +63,14 @@ body {
 
 .profile-header-container {
     background-color: var(--secondary-bg);
-    padding: 20px 10px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
     border-bottom: 1px solid #e67300;
-    margin-bottom: 25px;
+    margin: -15px -15px 25px -15px;
+    width: calc(100% + 30px);
 }
 
 .profile-identity {
@@ -122,6 +126,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 #description-text {
@@ -136,6 +143,62 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.profile-header {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.back-button i {
+    margin-right: 8px;
+}
+
+.back-button:hover {
+    color: var(--accent-color);
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: var(--primary-bg);
+    border-radius: var(--border-radius-md);
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-item i {
+    font-size: 1.5em;
+    color: var(--accent-color);
+    margin-bottom: 8px;
+}
+
+.stat-value {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.stat-label {
+    font-size: 0.9em;
+    color: var(--text-secondary);
+    margin-top: 4px;
 }
 
 .btn-edit-profile {
@@ -445,6 +508,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 80px; /* Hauteur fixe de la navbar */
     background-color: #2c2c2c;
     border-top: 1px solid #4a4a4a;
     display: flex;
@@ -491,50 +555,20 @@ body {
     font-weight: 500;
 }
 
-/* Styles responsifs */
-/* Grand écran */
-@media (min-width: 1200px) {
-    .app-container {
-        max-width: 1200px;
-        padding: 25px;
-    }
-
-    .profile-header-container {
-        gap: 30px;
-        padding: 30px 20px;
-    }
-
-    .avatar {
-        width: 120px;
-        height: 120px;
-        font-size: 2.5em;
-    }
-}
-
-/* Tablettes et écrans moyens */
-@media (max-width: 992px) {
-    .app-container {
-        width: 98%;
-        margin: 15px auto;
-    }
-
-    .profile-stats-section h2 {
-        font-size: 1.4em;
-    }
-
-    .edit-profile-fields {
-        padding: 20px;
-    }
-}
-
-/* Tablettes et petits écrans */
+/* Styles responsives */
 @media (max-width: 768px) {
+    body {
+        padding-bottom: 70px; /* Navbar plus petite sur mobile */
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
     .app-container {
         width: 100%;
-        margin: 0;
+        margin: 0 0 20px 0;
         border-radius: 0;
-        min-height: 100vh;
-        padding: 10px;
     }
 
     .profile-header-container {
@@ -545,138 +579,140 @@ body {
         margin-bottom: 20px;
     }
 
-    .profile-identity {
-        min-width: 100px;
-    }
-
-    .presentation-frame {
-        flex: 1 1 100%;
-        min-height: 80px;
-    }
-
     .btn-edit-profile {
-        width: 100%;
+        width: 80%;
         max-width: 300px;
         padding: 12px 15px;
     }
 
     .audio-list-container {
-        max-height: calc(100vh - 400px);
-    }
-}
-
-/* Mobiles en mode paysage */
-@media (max-width: 768px) and (orientation: landscape) {
-    body {
-        padding-bottom: 60px;
+        max-height: 250px;
     }
 
-    .profile-header-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .audio-list-container {
-        max-height: calc(100vh - 300px);
-    }
-}
-
-/* Petits mobiles */
-@media (max-width: 480px) {
-    body {
-        padding-bottom: 70px;
-    }
-
-    .avatar {
-        width: 70px;
-        height: 70px;
-        font-size: 1.6em;
-    }
-
-    .profile-name {
-        font-size: 1.2em;
+    .audio-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px;
     }
 
     .presentation-frame {
-        padding: 10px;
-        min-height: 60px;
+        flex: 1 1 250px;
+        min-height: 80px;
+        padding: 12px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-bottom: 60px; /* Encore plus petite sur très petit écran */
     }
 
-    #description-text {
-        font-size: 0.85em;
-        line-height: 1.4;
+    .navbar {
+        height: 60px;
+    }
+
+    .app-container {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .profile-name {
+        font-size: 1.3em;
+    }
+
+    .presentation-frame {
+        flex: 1 1 200px;
+        min-height: 60px;
+        padding: 10px;
+        font-size: 0.9em;
     }
 
     .edit-profile-fields {
-        padding: 12px;
+        padding: 15px;
+    }
+
+    .edit-profile-buttons {
+        gap: 10px;
+        margin-top: 20px;
     }
 
     .btn-submit-profile,
     .btn-cancel-profile {
-        font-size: 0.9em;
-        padding: 8px 16px;
+        font-size: 0.95em;
+        padding: 9px 18px;
+    }
+
+    .audio-count-bubble {
+        font-size: 0.8em;
+        padding: 2px 8px;
+        margin-left: 8px;
     }
 
     .audio-item {
-        padding: 8px;
-    }
-
-    .audio-play-wrapper {
-        min-width: 40px;
-        height: 40px;
-    }
-
-    .audio-stats-actions {
-        font-size: 0.8em;
-        gap: 8px;
-    }
-
-    .navbar {
-        padding: 4px 0;
-    }
-
-    .nav-icon {
-        font-size: 1.2em;
-    }
-
-    .nav-text {
-        font-size: 0.65em;
-    }
-}
-
-/* Très petits écrans */
-@media (max-width: 320px) {
-    .avatar {
-        width: 60px;
-        height: 60px;
-        font-size: 1.4em;
-    }
-
-    .profile-name {
-        font-size: 1.1em;
-    }
-
-    .btn-edit-profile {
-        font-size: 0.9em;
         padding: 10px;
     }
 
+    .audio-main-content {
+        gap: 12px;
+    }
+
     .audio-play-wrapper {
-        min-width: 35px;
-        height: 35px;
+        min-width: 45px;
+        height: 45px;
+        padding: 0 8px;
+    }
+
+    .audio-play-icon {
+        font-size: 1.4em;
+    }
+
+    .audio-timer {
+        font-size: 0.75em;
+        padding: 2px 5px;
+        border-radius: 6px;
+    }
+
+    .audio-stats-actions {
+        font-size: 0.85em;
+        gap: 10px;
+    }
+
+    .audio-stats {
+        gap: 10px;
+    }
+
+    .audio-stats span i {
+        font-size: 1em;
+        margin-right: 4px;
+    }
+
+    .audio-published-time {
+        font-size: 0.75em;
+    }
+
+    .delete-audio-button {
+        font-size: 1.2em;
+        padding: 6px;
+    }
+
+    .navbar {
+        padding: 5px 0;
+    }
+
+    .nav-icon {
+        font-size: 1.3em;
     }
 
     .nav-text {
-        display: none;
-    }
-}
-
-/* Support des écrans à haute densité de pixels */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .avatar img,
-    .photo-preview-container img {
-        image-rendering: -webkit-optimize-contrast;
-        image-rendering: crisp-edges;
+        font-size: 0.7em;
     }
 }
 
@@ -746,4 +782,32 @@ body {
     color: white;
     font-size: 0.9em;
     text-align: center;
+}
+
+.audio-list-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--primary-bg);
+    border-top: 4px solid var(--accent-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.audio-list-loading p {
+    color: var(--text-secondary);
+    font-size: 0.9em;
 }

@@ -176,6 +176,7 @@ function fetchNotifications($pdo, $userId) {
             JOIN register r ON c.user_id = r.id
             JOIN audio a ON c.audio_id = a.id
             WHERE a.user_id = :userId
+            AND c.user_id != :userId  -- Exclure les commentaires de l'utilisateur lui-même
             
             UNION ALL
             
@@ -195,6 +196,7 @@ function fetchNotifications($pdo, $userId) {
             JOIN register r ON s.user_id = r.id
             JOIN audio a ON s.audio_id = a.id
             WHERE a.user_id = :userId
+            AND s.user_id != :userId  -- Exclure les partages de l'utilisateur lui-même
 
             UNION ALL
 
@@ -214,6 +216,7 @@ function fetchNotifications($pdo, $userId) {
             JOIN register r ON rc.user_id = r.id
             JOIN audio a ON rc.audio_id = a.id
             WHERE a.user_id = :userId
+            AND rc.user_id != :userId  -- Exclure les réactions de l'utilisateur lui-même
         )
         SELECT *
         FROM combined_notifications
@@ -221,18 +224,33 @@ function fetchNotifications($pdo, $userId) {
     ";
     
     try {
+        $page = isset($_GET['page']) ? max(1, intval($_GET['page'])) : 1;
+        $perPage = 10;
+        $offset = ($page - 1) * $perPage;
+        
+        // D'abord, récupérer le nombre total de notifications
+        $countQuery = "SELECT COUNT(*) FROM ($query) AS total";
+        $stmtCount = $pdo->prepare($countQuery);
+        $stmtCount->bindValue(':userId', $userId, PDO::PARAM_INT);
+        $stmtCount->execute();
+        $totalCount = $stmtCount->fetchColumn();
+        
+        // Ensuite, récupérer les notifications avec pagination
+        $query .= " LIMIT :limit OFFSET :offset";
         $stmt = $pdo->prepare($query);
         $stmt->bindValue(':userId', $userId, PDO::PARAM_INT);
+        $stmt->bindValue(':limit', $perPage, PDO::PARAM_INT);
+        $stmt->bindValue(':offset', $offset, PDO::PARAM_INT);
         $stmt->execute();
         $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         return [
             'notifications' => $notifications,
             'pagination' => [
-                'current_page' => 1,
-                'per_page' => 20,
-                'total_count' => count($notifications),
-                'total_pages' => 1
+                'current_page' => $page,
+                'per_page' => $perPage,
+                'total_count' => $totalCount,
+                'total_pages' => ceil($totalCount / $perPage)
             ]
         ];
         
@@ -436,6 +454,15 @@ if (isset($_POST['mark_as_read'])) {
                         </button>
                     </article>
                 <?php endforeach; ?>
+                
+                <?php if ($notifications['pagination']['current_page'] < $notifications['pagination']['total_pages']): ?>
+                    <div class="load-more-container">
+                        <button id="loadMoreBtn" class="load-more-btn">
+                            <i class="fas fa-chevron-down"></i>
+                            <span>Voir plus de notifications</span>
+                        </button>
+                    </div>
+                <?php endif; ?>
             <?php endif; ?>
         </main>
     </div>
@@ -467,6 +494,48 @@ if (isset($_POST['mark_as_read'])) {
         const unreadCountElement = document.getElementById('unreadCount');
         const navUnreadBadge = document.getElementById('navUnreadBadge');
         const markAllAsReadBtn = document.getElementById('markAllAsRead');
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        let currentPage = <?= $notifications['pagination']['current_page'] ?>;
+
+        // Fonction pour formater la date relative
+        function formatRelativeTime(datetime) {
+            const date = new Date(datetime);
+            const day = date.getDate().toString().padStart(2, '0');
+            const month = (date.getMonth() + 1).toString().padStart(2, '0');
+            const year = date.getFullYear();
+            const hours = date.getHours().toString().padStart(2, '0');
+            const minutes = date.getMinutes().toString().padStart(2, '0');
+            
+            return `${day}/${month}/${year} à ${hours}:${minutes}`;
+        }
+
+        // Fonction pour obtenir le texte de la réaction
+        function getReactionText(type) {
+            switch (type) {
+                case 'like':
+                    return 'aimé';
+                case 'dislike':
+                    return 'n\'a pas aimé';
+                case 'laugh':
+                    return 'rire de';
+                default:
+                    return 'a réagi à';
+            }
+        }
+
+        // Fonction pour obtenir l'icône de la réaction
+        function getReactionIcon(type) {
+            switch (type) {
+                case 'like':
+                    return '<i class="fas fa-thumbs-up reaction-like"></i>';
+                case 'dislike':
+                    return '<i class="fas fa-thumbs-down reaction-dislike"></i>';
+                case 'laugh':
+                    return '<i class="fas fa-laugh reaction-laugh"></i>';
+                default:
+                    return '<i class="far fa-smile"></i>';
+            }
+        }
 
         // Fonction pour marquer une notification comme lue
         async function markAsRead(notification) {
@@ -520,6 +589,112 @@ if (isset($_POST['mark_as_read'])) {
         refreshBtn.addEventListener('click', () => {
             window.location.reload();
         });
+
+        // Fonction pour charger plus de notifications
+        async function loadMoreNotifications() {
+            if (!loadMoreBtn) return;
+            
+            loadMoreBtn.disabled = true;
+            // Sauvegarder le contenu original du bouton
+            const originalContent = loadMoreBtn.innerHTML;
+            // Afficher l'icône de chargement
+            loadMoreBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+            
+            try {
+                const response = await fetch(`notifications.php?ajax=1&page=${currentPage + 1}`);
+                const data = await response.json();
+                
+                if (data.success) {
+                    const newNotifications = data.data.notifications;
+                    if (newNotifications.length > 0) {
+                        newNotifications.forEach(notification => {
+                            const notificationElement = createNotificationElement(notification);
+                            notificationsList.insertBefore(notificationElement, loadMoreBtn.parentElement);
+                        });
+                        
+                        currentPage++;
+                        
+                        // Mettre à jour ou supprimer le bouton "Voir plus"
+                        if (currentPage >= data.data.pagination.total_pages) {
+                            loadMoreBtn.parentElement.remove();
+                        } else {
+                            loadMoreBtn.disabled = false;
+                            loadMoreBtn.innerHTML = '<i class="fas fa-chevron-down"></i>';
+                        }
+                    }
+                }
+            } catch (error) {
+                console.error('Erreur lors du chargement des notifications:', error);
+                loadMoreBtn.innerHTML = '<i class="fas fa-exclamation-circle"></i>';
+                setTimeout(() => {
+                    loadMoreBtn.innerHTML = originalContent;
+                }, 2000);
+            } finally {
+                if (loadMoreBtn && !loadMoreBtn.parentElement.remove) {
+                    loadMoreBtn.disabled = false;
+                }
+            }
+        }
+
+        // Fonction pour créer un élément de notification
+        function createNotificationElement(notification) {
+            const article = document.createElement('article');
+            article.className = `notification ${notification.is_read ? '' : 'unread'}`;
+            article.dataset.id = notification.id;
+            article.dataset.type = notification.type;
+            article.setAttribute('role', 'article');
+            article.setAttribute('aria-label', `Notification de ${notification.username}`);
+            
+            article.innerHTML = `
+                <div class="notification-avatar ${notification.gender.toLowerCase()}" aria-hidden="true">
+                    ${notification.photo_profil ? 
+                        `<img src="uploads/profile_photos/${notification.photo_profil}" 
+                              alt="Photo de profil de ${notification.username}"
+                              class="avatar-image">` :
+                        `<span>${notification.username.substring(0, 2).toUpperCase()}</span>`
+                    }
+                </div>
+                <div class="notification-content">
+                    <p class="notification-text">
+                        <strong>${notification.username}</strong>
+                        ${getNotificationText(notification)}
+                    </p>
+                    <div class="notification-meta">
+                        <span class="time">
+                            <i class="far fa-clock"></i> 
+                            ${formatRelativeTime(notification.created_at)}
+                        </span>
+                        ${notification.type === 'reaction' ? 
+                            `<span class="reaction-icon">${getReactionIcon(notification.reaction_type)}</span>` : 
+                            ''}
+                    </div>
+                </div>
+                <button class="notification-action" aria-label="Options de notification">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            `;
+            
+            return article;
+        }
+
+        // Fonction pour obtenir le texte de la notification
+        function getNotificationText(notification) {
+            switch (notification.type) {
+                case 'comment':
+                    return `a commenté votre audio <strong>"${notification.audio_title}"</strong>`;
+                case 'share':
+                    return `a partagé votre audio <strong>"${notification.audio_title}"</strong>`;
+                case 'reaction':
+                    return `a ${getReactionText(notification.reaction_type)} votre audio <strong>"${notification.audio_title}"</strong>`;
+                default:
+                    return '';
+            }
+        }
+
+        // Gestionnaire d'événements pour le bouton "Voir plus"
+        if (loadMoreBtn) {
+            loadMoreBtn.addEventListener('click', loadMoreNotifications);
+        }
     });
     </script>
 
@@ -603,6 +778,112 @@ if (isset($_POST['mark_as_read'])) {
     @keyframes spin {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
+    }
+    
+    .load-more-container {
+        text-align: center;
+        padding: 0.5rem;
+        width: 100%;
+        position: sticky;
+        bottom: 15px;
+        left: 0;
+        z-index: 100;
+        background: transparent;
+        pointer-events: none;
+    }
+    
+    .load-more-btn {
+        background-color: var(--accent-color);
+        border: none;
+        border-radius: 50%;
+        padding: 0;
+        color: white;
+        cursor: pointer;
+        transition: all 0.2s;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        pointer-events: auto;
+    }
+    
+    .load-more-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    }
+    
+    .load-more-btn:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+        background-color: var(--text-secondary);
+    }
+    
+    .load-more-btn span {
+        display: none;
+    }
+    
+    .load-more-btn i {
+        font-size: 1.3rem;
+    }
+
+    /* Styles pour tablette */
+    @media (max-width: 1024px) {
+        .app-container {
+            margin: 15px auto;
+            height: calc(100vh - 90px);
+        }
+    }
+
+    /* Styles pour mobile */
+    @media (max-width: 768px) {
+        .app-container {
+            width: 100%;
+            margin: 0;
+            height: calc(100vh - 60px);
+            border-radius: 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .app-container {
+            height: calc(100vh - 60px);
+        }
+        
+        .load-more-btn {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .load-more-btn i {
+            font-size: 1.2rem;
+        }
+    }
+
+    /* Ajustement du conteneur principal pour le scroll */
+    .app-container {
+        width: 95%; 
+        max-width: 1000px; 
+        margin: 30px auto;
+        height: calc(100vh - 120px);
+        box-shadow: 0 10px 25px rgba(187, 184, 184, 0.3);
+        background-color: var(--secondary-bg); 
+        border-radius: 15px; 
+        position: relative; 
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    /* Ajustement de la liste des notifications */
+    .notifications-list {
+        flex: 1;
+        overflow-y: auto;
+        padding: 10px;
+        padding-bottom: 80px;
+        position: relative;
     }
     </style>
 </body>

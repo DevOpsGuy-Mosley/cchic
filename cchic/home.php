@@ -15,24 +15,27 @@ function getUnreadNotificationsCount($pdo, $userId) {
             SELECT COUNT(*) as unread_count FROM (
                 SELECT id FROM comments 
                 WHERE audio_id IN (SELECT id FROM audio WHERE user_id = ?) 
+                AND user_id != ?  -- Exclure les commentaires de l'utilisateur lui-même
                 AND (is_read = 0 OR is_read IS NULL)
                 
                 UNION ALL
                 
                 SELECT id FROM shares 
                 WHERE audio_id IN (SELECT id FROM audio WHERE user_id = ?)
+                AND user_id != ?  -- Exclure les partages de l'utilisateur lui-même
                 AND (is_read = 0 OR is_read IS NULL)
                 
                 UNION ALL
                 
                 SELECT id FROM reactions 
                 WHERE audio_id IN (SELECT id FROM audio WHERE user_id = ?)
+                AND user_id != ?  -- Exclure les réactions de l'utilisateur lui-même
                 AND (is_read = 0 OR is_read IS NULL)
             ) AS combined_notifications
         ";
         
         $stmt = $pdo->prepare($query);
-        $stmt->execute([$userId, $userId, $userId]);
+        $stmt->execute([$userId, $userId, $userId, $userId, $userId, $userId]);
         return $stmt->fetchColumn();
     } catch (PDOException $e) {
         error_log("Erreur lors du comptage des notifications non lues: " . $e->getMessage());
@@ -401,7 +404,7 @@ function addShare($pdo, $audioId, $userId) {
                 <?php $userReaction = getUserReaction($pdo, $audio['id'], $_SESSION['user_id']); ?>
                 <div class="audio-card" data-audio-id="<?= htmlspecialchars($audio['id']) ?>">
                     <div class="user-frame" style="display: flex; align-items: center; padding: 10px;">
-                        <div class="profile-photo" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px; overflow: hidden;">
+                        <a href="profile.php?user_id=<?= htmlspecialchars($audio['user_id']) ?>" class="profile-photo" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px; overflow: hidden; text-decoration: none;">
                             <?php if (!empty($audio['photo_profil'])): ?>
                                 <img src="uploads/profile_photos/<?= htmlspecialchars($audio['photo_profil']) ?>" alt="Photo de profil" style="width: 100%; height: 100%; object-fit: cover;">
                             <?php else: ?>
@@ -409,7 +412,7 @@ function addShare($pdo, $audioId, $userId) {
                                     <?= strtoupper(substr($audio['nom_prenoms'], 0, 2)) ?>
                                 </div>
                             <?php endif; ?>
-                        </div>
+                        </a>
                         <h3 class="username" style="font-weight: 500; color: white; text-align: center; width: 100%; margin: 0;">
                             <?= htmlspecialchars($audio['nom_prenoms']) ?>
                         </h3>
