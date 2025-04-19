@@ -4,292 +4,700 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À Propos de Moi</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
-            background-color: #212121;
-            color: #ffffff;
-            padding: 2rem;
-        }
-        .card {
-            background-color: #2d2d2d;
-            border-radius: 10px;
-            margin-bottom: 2rem;
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: scale(1.02);
-        }
-        .profile-photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        .info-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 1rem;
-        }
-        .photo-container {
-            margin: 1rem 0;
-        }
-        .chart-container {
-            position: relative;
-            height: 300px;
-            margin: 20px 0;
-        }
-        .tech-details {
-            margin-top: 20px;
-        }
-        .btn-retour {
-            position: fixed;
-            top: 15px;
-            left: 15px;
-            background-color: #2d2d2d;
-            color: #ffffff;
-            border: 1px solid #ffffff;
-            padding: 6px 12px;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            z-index: 1000;
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        .btn-retour:hover {
-            background-color: #ffffff;
-            color: #2d2d2d;
-            transform: scale(1.05);
+        :root {
+            --text-color: #ffffff;
         }
 
-        /* Styles responsifs */
-        @media (max-width: 768px) {
-            body {
+        body {
+            background: #212121;
+            color: var(--text-color);
+            font-family: 'Roboto', sans-serif; /* Police de caractères */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .main-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .circle-container {
+            position: relative;
+            width: 700px;
+            height: 700px;
+            margin: 0 auto;
+        }
+
+        .center-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            z-index: 2;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .center-image.rotate {
+            animation: rotate 1s ease-in-out;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        .center-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section {
+            position: absolute;
+            width: 280px;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            opacity: 0;
+        }
+
+        .section.active .section-content {
+            max-height: 300px;
+            opacity: 1;
+            margin-top: 1rem;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin: 0;
+            text-align: center;
+            position: relative;
+            padding: 10px 0;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .section-title::after {
+            content: '\f107';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            transition: transform 0.3s ease;
+        }
+
+        .section.active .section-title::after {
+            transform: rotate(180deg);
+        }
+
+        .profile {
+            top: 25%;
+            left: 0;
+            transform: translateY(-50%) translateX(-35%);
+            border: 2px solid #0044ff;
+        }
+
+        .level {
+            bottom: 25%;
+            left: 0;
+            transform: translateY(50%) translateX(-35%);
+            border: 2px solid #FF6F00;
+        }
+
+        .project {
+            top: 25%;
+            right: 0;
+            transform: translateY(-50%) translateX(35%);
+            border: 2px solid #FF6F00;
+        }
+
+        .technologies {
+            bottom: 25%;
+            right: 0;
+            transform: translateY(50%) translateX(35%);
+            border: 2px solid #0044ff;
+        }
+
+        .tech-category {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .tech-category:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .tech-icon {
+            width: 24px;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .info-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+
+        .info-list li:hover {
+            opacity: 1;
+        }
+
+        .info-list li i {
+            margin-right: 10px;
+            width: 20px;
+            color: inherit;
+        }
+
+        .btn-retour {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: transparent;
+            color: white;
+            border: 2px solid #FF6F00;
+            padding: 10px;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-retour:hover {
+            transform: scale(1.05);
+            background: #FF6F00;
+            color: white;
+        }
+
+        .btn-retour span {
+            display: none;
+        }
+
+        @media (max-width: 1200px) {
+            .circle-container {
+                width: 600px;
+                height: 600px;
+            }
+            .section {
+                width: 250px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .circle-container {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
                 padding: 1rem;
             }
-            .container {
-                padding: 0;
+
+            .section {
+                position: relative;
+                width: 100%;
+                max-width: 500px;
+                margin: 0 auto;
+                transform: none !important;
+                top: auto;
+                left: auto;
+                right: auto;
+                bottom: auto;
             }
-            .card {
-                margin-bottom: 1rem;
+
+            .center-image {
+                position: relative;
+                margin: 2rem auto;
+                transform: none;
+                width: 150px;
+                height: 150px;
+                top: auto;
+                left: auto;
             }
-            .info-container {
-                text-align: center;
+
+            .center-image.rotate {
+                animation: rotate-mobile 1s ease-in-out;
             }
-            .photo-container {
-                margin: 1rem auto;
-            }
-            .chart-container {
-                height: 250px;
-            }
-            .btn-retour {
-                top: 10px;
-                left: 10px;
-                padding: 8px;
-                font-size: 14px;
-            }
-            .btn-text {
-                display: none;
+
+            @keyframes rotate-mobile {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
             }
         }
 
         @media (max-width: 576px) {
-            .info-container {
-                flex-direction: column;
+            body {
+                padding: 1rem;
             }
-            .photo-container {
+
+            .section {
+                padding: 15px;
+            }
+
+            .center-image {
+                width: 120px;
+                height: 120px;
                 margin: 1rem auto;
             }
-            .chart-container {
-                height: 200px;
+
+            .section-title {
+                font-size: 1.2rem;
             }
-            .tech-details {
-                margin-top: 1rem;
+
+            .info-list li {
+                margin-bottom: 1rem;
+            }
+
+            .info-list li p {
+                font-size: 0.85rem;
             }
         }
 
-        @media (min-width: 768px) {
-            .info-container {
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
+        @media (max-width: 360px) {
+            body {
+                padding: 0.5rem;
             }
-            .photo-container {
-                margin-left: 20px;
-                margin-top: 0;
+
+            .center-image {
+                width: 100px;
+                height: 100px;
             }
+
+            .section {
+                padding: 10px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .circle-container {
+                width: 800px;
+                height: 800px;
+            }
+
+            .section {
+                width: 300px;
+            }
+        }
+
+        .info-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            padding-right: 5px;
+        }
+        .info-list li:last-child {
+            margin-bottom: 0;
+        }
+        .tech-icon {
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+        .info-list li div {
+            margin-left: 10px;
+        }
+        .info-list li strong {
+            display: block;
+            margin-bottom: 0.2rem;
+            color: white;
+        }
+        .info-list li p {
+            font-size: 0.9rem;
+            line-height: 1.3;
+        }
+
+        .section-content::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+
+        .section-content::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+
+        .section-content::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-content::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .section-content {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.05);
+        }
+
+        .section-content {
+            scroll-behavior: smooth;
+        }
+
+        .project .section-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, var(--primary-color), var(--third-color));
+        }
+
+        .profile .section-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, var(--secondary-color), var(--fourth-color));
+        }
+
+        .level .section-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, var(--fourth-color), var(--primary-color));
+        }
+
+        .technologies .section-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, var(--third-color), var(--secondary-color));
         }
     </style>
 </head>
 <body>
-    <a href="index.php" class="btn-retour" title="Retour à l'accueil">
+    <a href="index.php" class="btn-retour">
         <i class="fas fa-arrow-left"></i>
-        <span class="btn-text">Retour</span>
+        <span>Retour</span>
     </a>
 
-    <div class="container">
-        <!-- Cadre 1: Informations personnelles -->
-        <div class="card">
-            <div class="card-body info-container">
-                
-                <div class="info-text text-center">
-                    
-                    <h5>Kouadio Guy-Mosley Kouame</h5>
-                    <p>kouadioguymosley@gmail.com</p>
-                    <p>+225 01 52 20 79 12</p>
-                </div>
-                <div>
-                    <h3><i class="fas fa-code"></i> Développeur Full-stack</h3>
-                </div>
-                <div class="photo-container">
-                    <div style="width: 150px; height: 150px; overflow: hidden;">
-                        <img src="Logo.png" alt="Photo de Profil" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+    <div class="main-container">
+        <div class="circle-container">
+            <div class="center-image">
+                <img src="/" alt="Photo de Profil">
+            </div>
+
+            <div class="section project">
+                <h2 class="section-title"><i class="fas fa-project-diagram"></i>Projet C'chic</h2>
+                <div class="section-content">
+                    <div class="project-section mb-4">
+                        <h5 class="text-white-50 mb-3">Qu'est-ce que C'chic ?</h5>
+                        <p>C'chic est une plateforme sociale innovante dédiée au partage de contenus audio sur differents sujets. Elle permet aux utilisateurs de s'exprimer et d'interagir à travers des notes vocales d'une durée de 60 secondes maximum, créant ainsi une expérience plus personnelle et authentique que le texte.</p>
+                    </div>
+
+                    <div class="project-section mb-4">
+                        <h5 class="text-white-50 mb-3">Fonctionnalités Principales</h5>
+                        <ul class="info-list">
+                            <li>
+                                <i class="fas fa-microphone"></i>
+                                <div>
+                                    <strong>Enregistrement Vocal</strong>
+                                    <p class="mb-0 text-white-50">Créez et partagez facilement des messages vocaux avec possibilité d'ecouter avant de publier.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-comments"></i>
+                                <div>
+                                    <strong>Interactions</strong>
+                                    <p class="mb-0 text-white-50">Commentez en texte, partagez et reagissez (like, dislike, rire) aux publications.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section mb-4">
+                        <h5 class="text-white-50 mb-3">Guide d'Utilisation</h5>
+                        <ul class="info-list">
+                            <li>
+                                <i class="fas fa-user-plus"></i>
+                                <div>
+                                    <strong>Création de Compte</strong>
+                                    <p class="mb-0 text-white-50">Inscrivez-vous avec email, personnalisez votre profil avec photo et description.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-record-vinyl"></i>
+                                <div>
+                                    <strong>Publication</strong>
+                                    <p class="mb-0 text-white-50">Cliquez sur le bouton micro, enregistrez votre message, ajoutez un titre et automatiquement votre message sera publié sur le fil d'actualité.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-search"></i>
+                                <div>
+                                    <strong>Découverte</strong>
+                                    <p class="mb-0 text-white-50">Explorez le fil d'actualité, utilisez la recherche pour trouver du contenu a partir d'un mot clé ou d'un utilisateur.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h5 class="text-white-50 mb-3">Sécurité et Confidentialité</h5>
+                        <ul class="info-list">
+                            <li>
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <strong>Protection des Données</strong>
+                                    <p class="mb-0 text-white-50">Vos données sont hashées et sécurisées.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-user-shield"></i>
+                                <div>
+                                    <strong>Contrôle du Contenu</strong>
+                                    <p class="mb-0 text-white-50">Modération active, possibilité de signaler du contenu inapproprié et l'administrateur le supprimera.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="project-info mt-4 pt-3 border-top border-white-50">
+                        <p class="mb-2"><i class="fas fa-calendar-alt me-2"></i>Développé du 20 Mars au 29 avril 2025</p>
+                        <p class="mb-0"><i class="fas fa-code-branch me-2"></i>Mises à jour régulières et nouvelles fonctionnalités</p>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Cadre 2: Parcours scolaire et compétences -->
-        <div class="card">
-            <div class="card-body">
-                <h5 class="text-center"><i class="fas fa-graduation-cap"></i> Parcours Scolaire et Compétences</h5>
-                <br>
-                
-                <div class="row">
-                    <!-- Parcours scolaire et diplômes -->
-                    <div class="col-md-6">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h6 class="text-center">Parcours Scolaire et Diplômes</h6>
-                                <ol>
-                                    <li><strong>Administrateur Base de Données:</strong> Biffary Academy, 2024</li>
-                                    <li><strong>Data Analyst:</strong> Biffary Academy, 2024</li>
-                                    <li><strong>Sécurité & Hacking:</strong> Enov, 2023</li>
-                                    <li><strong>Licence en Philosophie:</strong> UAO, 2023</li>
-                                    <li><strong>Baccalauréat:</strong> 2019</li>
-                                </ol>
-                            </div>
+            <div class="section profile">
+                <h2 class="section-title"><i class="fas fa-id-card"></i>Profil</h2>
+                <div class="section-content">
+                    <div class="profile-section mb-4">
+                        <h5 class="text-white-50 mb-3">Qui suis-je ?</h5>
+                        <div class="info-card p-3 mb-3" style="background: rgba(255,255,255,0.05); border-radius: 10px;">
+                            <p class="mb-2">Développeur Full-stack passionné par la création d'applications web mobile innovantes. Mon parcours unique, alliant philosophie et technologie, m'apporte une approche différente et créative dans le développement de solutions numériques.</p>
                         </div>
-                    </div>
-
-                    <!-- Compétences -->
-                    <div class="col-md-6">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h6 class="text-center">Compétences</h6>
-                                <ol>
-                                    <li>Développement Web (HTML, CSS, JavaScript) <span style="color: gold;">★★★☆☆</span></li>
-                                    <li>PHP et MySQL <span style="color: gold;">★★★☆☆</span></li>
-                                    <li>Gestion de bases de données <span style="color: gold;">★★★☆☆</span></li>
-                                    <li>Conception d'interfaces Utilisateur et Administrateur <span style="color: gold;">★★★★☆</span></li>
-                                </ol>
-                            </div>
-                        </div>
+                        <ul class="info-list">
+                            <li>
+                                <i class="fas fa-user"></i>
+                                <div>
+                                    <strong>Kouadio Guy-Mosley Kouame</strong>
+                                    <p class="mb-0 text-white-50">Développeur Full-stack</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p class="mb-0 text-white-50">kouadioguymosley@gmail.com</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <strong>Contact</strong>
+                                    <p class="mb-0 text-white-50">+225 01 52 20 79 12</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Cadre 3: Description du projet -->
-        <div class="card">
-            <div class="card-body">
-                <h5 class="text-center"><i class="fas fa-project-diagram"></i> Description du Projet</h5>
-                <p>
-                    C'chic est une plateforme dédiée à la création et au partage de contenus audio. 
-                    Le projet a été lancé pour permettre aux utilisateurs d'interagir et d'échanger des idées à travers des notes vocales.
-                </p>
-                <p>
-                    L'objectif principal de C'chic est de faciliter la communication et le partage d'expériences 
-                    de manière simple et accessible.
-                </p>
-                <p>
-                    Le développement de la plateforme a commencé le 20 Mars 2025 et s'est terminé le 29 avril 2025,
-                    avec des tests et des améliorations continues pour garantir une expérience utilisateur optimale.
-                </p>
-            </div>
-        </div>
-
-        <!-- Cadre 4: Technologies utilisées -->
-        <div class="card">
-            <div class="card-body">
-                <h5 class="text-center"><i class="fas fa-cogs"></i> Technologies Utilisées</h5>
-                
-                <div class="row">
-                    <div class="col-md-6 tech-details">
-                        <p><strong>Frontend:</strong> HTML, CSS, JavaScript, Bootstrap</p>
-                        <ul>
-                            <li><strong>HTML:</strong> Utilisé pour structurer le contenu de la page.</li>
-                            <li><strong>CSS:</strong> Utilisé pour styliser le contenu et rendre la page visuellement attrayante.</li>
-                            <li><strong>JavaScript:</strong> Utilisé pour ajouter des interactions dynamiques, comme le contrôle des formulaires.</li>
-                            <li><strong>Bootstrap:</strong> Une bibliothèque CSS qui facilite le design responsive.</li>
-                        </ul>
-                        <p><strong>Backend:</strong> PHP, PDO</p>
-                        <ul>
-                            <li><strong>PHP:</strong> Utilisé pour gérer la logique serveur et interagir avec la base de données.</li>
-                            <li><strong>PDO:</strong> Une extension PHP pour une connexion sécurisée à la base de données.</li>
-                        </ul>
-                        <p><strong>Base de données:</strong> MySQL</p>
-                        <ul>
-                            <li><strong>MySQL:</strong> Utilisé pour stocker les données des utilisateurs et les audios.</li>
+            <div class="section level">
+                <h2 class="section-title"><i class="fas fa-chart-line"></i>Niveau</h2>
+                <div class="section-content">
+                    <div class="mb-4">
+                        <h5 class="text-white-50 mb-3">Formation & Diplômes</h5>
+                        <ul class="info-list">
+                            <li>
+                                <i class="fas fa-database"></i>
+                                <div>
+                                    <strong>Administrateur Base de Données (2024)</strong>
+                                    <p class="mb-0 text-white-50">Gestion et optimisation des bases de données, sécurité des données</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-chart-line"></i>
+                                <div>
+                                    <strong>Data Analyst (2024)</strong>
+                                    <p class="mb-0 text-white-50">Analyse de données, visualisation et reporting</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <strong>Sécurité & Hacking (2023)</strong>
+                                    <p class="mb-0 text-white-50">Cybersécurité, tests d'intrusion, protection des applications</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-book"></i>
+                                <div>
+                                    <strong>Licence en Philosophie (2023)</strong>
+                                    <p class="mb-0 text-white-50">Pensée analytique, résolution de problèmes complexes</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-md-6">
-                        <div class="chart-container">
-                            <canvas id="techChart"></canvas>
-                        </div>
+
+                    <div>
+                        <h5 class="text-white-50 mb-3">Compétences Techniques</h5>
+                        <ul class="info-list">
+                            <li>
+                                <i class="fas fa-laptop-code"></i>
+                                <div>
+                                    <strong>Développement Web</strong>
+                                    <p class="mb-0 text-white-50">HTML, CSS, JavaScript - Création d'interfaces interactives et responsives</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-database"></i>
+                                <div>
+                                    <strong>PHP et MySQL</strong>
+                                    <p class="mb-0 text-white-50">Développement backend, API REST, gestion de bases de données</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-server"></i>
+                                <div>
+                                    <strong>Gestion BDD</strong>
+                                    <p class="mb-0 text-white-50">Optimisation des requêtes, modélisation de données, maintenance</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-paint-brush"></i>
+                                <div>
+                                    <strong>UI/UX Design</strong>
+                                    <p class="mb-0 text-white-50">Création d'interfaces utilisateur et administrateur intuitives et esthétiques</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section technologies">
+                <h2 class="section-title"><i class="fas fa-cogs"></i>Technologies</h2>
+                <div class="section-content">
+                    <div class="tech-category">
+                        <h5 class="text-white-50 mb-3">Frontend (Ce que l'utilisateur voit)</h5>
+                        <ul class="info-list">
+                            <li>
+                                <span class="tech-icon"><i class="fab fa-html5" style="color: #E44D26;"></i></span>
+                                <div>
+                                    <strong>HTML</strong>
+                                    <p class="mb-0 text-white-50">Le squelette du site - Organise le contenu comme les paragraphes, images et boutons</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="tech-icon"><i class="fab fa-css3-alt" style="color: #264DE4;"></i></span>
+                                <div>
+                                    <strong>CSS</strong>
+                                    <p class="mb-0 text-white-50">Le style du site - Gère les couleurs, la mise en page et les animations</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="tech-icon"><i class="fab fa-js" style="color: #F7DF1E;"></i></span>
+                                <div>
+                                    <strong>JavaScript</strong>
+                                    <p class="mb-0 text-white-50">Le cerveau du site - Rend la page interactive et dynamique</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="tech-icon"><i class="fab fa-bootstrap" style="color: #563D7C;"></i></span>
+                                <div>
+                                    <strong>Bootstrap</strong>
+                                    <p class="mb-0 text-white-50">Une boîte à outils de design - Facilite la création d'un site adaptatif et moderne</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h5 class="text-white-50 mb-3">Backend (Ce qui se passe en coulisses)</h5>
+                        <ul class="info-list">
+                            <li>
+                                <span class="tech-icon"><i class="fab fa-php" style="color: #777BB4;"></i></span>
+                                <div>
+                                    <strong>PHP</strong>
+                                    <p class="mb-0 text-white-50">Le moteur du site - Traite les données et gère les fonctionnalités côté serveur</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="tech-icon"><i class="fas fa-shield-alt" style="color: #4479A1;"></i></span>
+                                <div>
+                                    <strong>PDO</strong>
+                                    <p class="mb-0 text-white-50">Le gardien des données - Assure une connexion sécurisée avec la base de données</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h5 class="text-white-50 mb-3">Base de données (Où sont stockées les informations)</h5>
+                        <ul class="info-list">
+                            <li>
+                                <span class="tech-icon"><i class="fas fa-database" style="color: #00758F;"></i></span>
+                                <div>
+                                    <strong>MySQL</strong>
+                                    <p class="mb-0 text-white-50">La bibliothèque du site - Stocke et organise toutes les données de manière structurée</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const ctx = document.getElementById('techChart').getContext('2d');
-            new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    labels: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'PHP', 'PDO', 'MySQL'],
-                    datasets: [{
-                        data: [20, 20, 20, 15, 15, 5, 5],
-                        backgroundColor: [
-                            '#E44D26', // HTML
-                            '#264DE4', // CSS
-                            '#F7DF1E', // JavaScript
-                            '#563D7C', // Bootstrap
-                            '#777BB4', // PHP
-                            '#4479A1', // PDO
-                            '#00758F'  // MySQL
-                        ],
-                        borderWidth: 0
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    cutout: '70%',
-                    rotation: -90,
-                    circumference: 180,
-                    plugins: {
-                        legend: {
-                            position: 'bottom',
-                            labels: {
-                                color: '#ffffff',
-                                font: {
-                                    size: 12
-                                }
-                            }
-                        }
+            const sections = document.querySelectorAll('.section');
+            const centerImage = document.querySelector('.center-image');
+            
+            sections.forEach(section => {
+                section.addEventListener('click', function() {
+                    if (this.classList.contains('active')) {
+                        this.classList.remove('active');
+                    } else {
+                        sections.forEach(s => s.classList.remove('active'));
+                        this.classList.add('active');
                     }
-                }
+                });
+            });
+
+            centerImage.addEventListener('click', function() {
+                this.classList.add('rotate');
+                setTimeout(() => {
+                    this.classList.remove('rotate');
+                }, 1000);
             });
         });
     </script>

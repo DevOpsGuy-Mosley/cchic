@@ -1,3 +1,20 @@
+<?php
+session_start();
+
+// Vérifier si la déconnexion a été confirmée
+if (isset($_POST['confirm_logout'])) {
+    // Détruire la session
+    session_unset();
+    session_destroy();
+
+    // Supprimer le cookie de token
+    setcookie('auth_token', '', time() - 3600, '/', '', true, true);
+
+    // Rediriger vers la page de connexion
+    header('Location: login.php');
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -41,7 +58,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 20px 10px 60px; /* Ajout de padding horizontal */
+            padding: 20px 10px 60px;
         }
 
         /* Animations */
@@ -68,7 +85,7 @@
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 10px 25px rgba(187, 184, 184, 0.3);
-            animation: fadeIn 0.5s ease; /* Animation d'apparition */
+            animation: fadeIn 0.5s ease;
             margin: 20px 0;
         }
 
@@ -160,7 +177,7 @@
             outline: none;
         }
 
-        /* Barre de navigation (identique à profile.html) */
+        /* Barre de navigation */
         .navbar { 
             position: fixed; 
             bottom: 0; 
@@ -218,7 +235,7 @@
             font-weight: 500;
         }
 
-        /* Styles responsives pour grands écrans */
+        /* Styles responsives */
         @media (min-width: 1200px) {
             .app-logout-wrapper {
                 max-width: 1000px;
@@ -241,7 +258,6 @@
             }
         }
 
-        /* Styles responsives pour tablettes et écrans moyens */
         @media (max-width: 768px) {
             .app-logout-wrapper {
                 width: 95%;
@@ -268,32 +284,6 @@
             }
         }
 
-        /* Styles responsives pour petites tablettes */
-        @media (max-width: 600px) {
-            .app-logout-wrapper {
-                width: 100%;
-                margin: 0;
-            }
-
-            .logout-container {
-                padding: 20px 15px;
-            }
-
-            .logout-icon {
-                font-size: 2.8em;
-            }
-
-            .logout-container h1 {
-                font-size: 1.6em;
-            }
-
-            .logout-message {
-                font-size: 1.1em;
-                padding: 0 10px;
-            }
-        }
-
-        /* Styles responsives pour mobiles */
         @media (max-width: 480px) {
             body {
                 padding: 10px 5px 60px;
@@ -326,66 +316,13 @@
                 padding: 12px;
                 font-size: 0.9em;
             }
-
-            .nav-icon {
-                font-size: 1.2em;
-            }
-
-            .nav-text {
-                font-size: 0.65em;
-            }
-        }
-
-        /* Styles responsives pour très petits écrans */
-        @media (max-width: 320px) {
-            .logout-container {
-                padding: 15px 10px;
-            }
-
-            .logout-icon {
-                font-size: 2em;
-            }
-
-            .logout-container h1 {
-                font-size: 1.2em;
-            }
-
-            .logout-message {
-                font-size: 0.9em;
-            }
-
-            .logout-btn {
-                padding: 10px;
-                font-size: 0.85em;
-            }
-        }
-
-        /* Support pour les écrans à orientation paysage sur mobile */
-        @media (max-height: 480px) and (orientation: landscape) {
-            .app-logout-wrapper {
-                min-height: 80vh;
-            }
-
-            .logout-container {
-                padding: 15px;
-            }
-
-            .logout-buttons {
-                flex-direction: row;
-                gap: 10px;
-            }
-
-            .logout-btn {
-                width: auto;
-                min-width: 120px;
-            }
         }
     </style>
 </head>
 <body>
     <!-- Contenu principal de la page -->
     <main class="app-logout-wrapper">
-        <!-- Section de déconnexion avec attributs ARIA pour l'accessibilité -->
+        <!-- Section de déconnexion -->
         <section class="logout-container" role="dialog" aria-modal="true" aria-labelledby="logoutTitle" aria-describedby="logoutMessage">
             <!-- Icône de déconnexion -->
             <div class="logout-icon" aria-hidden="true">
@@ -397,36 +334,34 @@
             <p class="logout-message" id="logoutMessage">
                 Êtes-vous sûr de vouloir vous déconnecter de votre compte C'chic ?
             </p>
-            <!-- Boutons d'action -->
-            <div class="logout-buttons">
-                <button type="button" class="logout-btn logout-confirm" id="confirmLogout" aria-label="Confirmer la déconnexion">
-                    Déconnexion
-                </button>
-                <button type="button" class="logout-btn logout-cancel" id="cancelLogout" aria-label="Annuler la déconnexion">
-                    Annuler
-                </button>
-            </div>
+            <!-- Formulaire de déconnexion -->
+            <form method="POST" action="">
+                <div class="logout-buttons">
+                    <button type="submit" name="confirm_logout" class="logout-btn logout-confirm" id="confirmLogout" aria-label="Confirmer la déconnexion">
+                        Déconnexion
+                    </button>
+                    <button type="button" class="logout-btn logout-cancel" id="cancelLogout" aria-label="Annuler la déconnexion">
+                        Annuler
+                    </button>
+                </div>
+            </form>
         </section>
     </main>
 
     <!-- Barre de navigation fixée en bas -->
     <nav class="navbar" aria-label="Navigation principale">
-        <!-- Lien vers l'accueil -->
         <a href="home.php" class="nav-item" data-page="home">
             <i class="fas fa-home nav-icon"></i>
             <span class="nav-text">Accueil</span>
         </a>
-        <!-- Lien vers le profil -->
         <a href="profile.php" class="nav-item" data-page="profile">
             <i class="fas fa-user nav-icon"></i>
             <span class="nav-text">Profil</span>
         </a>
-        <!-- Lien vers les notifications -->
         <a href="notifications.php" class="nav-item" data-page="notifications">
             <i class="fas fa-bell nav-icon"></i>
             <span class="nav-text">Notifications</span>
         </a>
-        <!-- Lien actif vers la déconnexion -->
         <a href="logout.php" class="nav-item active" data-page="logout" aria-current="page">
             <i class="fas fa-sign-out-alt nav-icon"></i>
             <span class="nav-text">Déconnexion</span>
@@ -434,33 +369,15 @@
     </nav>
 
     <script>
-        // Code exécuté une fois le DOM chargé
         document.addEventListener('DOMContentLoaded', () => {
-            // Récupération des boutons
-            const confirmLogout = document.getElementById('confirmLogout');
             const cancelLogout = document.getElementById('cancelLogout');
-
-            // Gestion du clic sur le bouton de confirmation
-            confirmLogout.addEventListener('click', () => {
-                // Normalement, ici on ferait une requête au serveur pour déconnecter l'utilisateur
-                alert('Vous avez été déconnecté avec succès.');
-                window.location.href = 'index.php'; // Redirection après déconnexion
-            });
 
             // Gestion du clic sur le bouton d'annulation
             cancelLogout.addEventListener('click', () => {
-                window.location.href = 'home.php'; // Retour à l'accueil
+                window.location.href = 'home.php';
             });
 
-            // Gestion des touches clavier pour l'accessibilité (confirmation)
-            confirmLogout.addEventListener('keyup', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    confirmLogout.click();
-                }
-            });
-
-            // Gestion des touches clavier pour l'accessibilité (annulation)
+            // Gestion des touches clavier pour l'accessibilité
             cancelLogout.addEventListener('keyup', (e) => {
                 if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
@@ -477,3 +394,4 @@
     </script>
 </body>
 </html>
+

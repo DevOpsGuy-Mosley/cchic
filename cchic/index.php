@@ -16,17 +16,17 @@
 <body>
    
     <!-- Conteneur principal de la page d'accueil -->
-    <div class="container text-center mt-5" id="welcomeContainer"> <!-- Conteneur centré avec marge supérieure -->
-        <img src="Logo.png" alt="C'chic Logo" class="img-fluid logo">
-        <h2 class="mb-4">Bienvenue sur C'chic</h2> <!-- Titre de bienvenue avec marge inférieure -->
+    <div class="container text-center mt-5" id="welcomeContainer">
+        <img src="Logo.png" alt="C'chic Logo" class="img-fluid logo mb-4">
+        <h2 class="mb-4">Bienvenue sur C'chic</h2>
 
-        <div class="mb-4"> 
-            <a href="login.php" class="btn btn-warning btn-lg mx-4">Se Connecter</a>
-            <a href="register.php" class="btn btn-primary btn-lg mx-4">S'inscrire</a>
-            <a href="about_me.php" class="btn btn-warning btn-lg mx-4" title="À propos"><i class="fas fa-user"></i></a>
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center" style="max-width: 800px; margin: 0 auto;">
+            <a href="login.php" class="btn btn-warning btn-lg flex-fill mx-md-2 mb-2 mb-md-0" style="min-width: 200px;">Se Connecter</a>
+            <a href="register.php" class="btn btn-primary btn-lg flex-fill mx-md-2 mb-2 mb-md-0" style="min-width: 200px;">S'inscrire</a>
+            <a href="about_me.php" class="btn btn-warning btn-lg mx-md-2" style="width: 60px;" title="À propos"><i class="fas fa-user"></i></a>
         </div>
 
-        <p class="lead">Venez rigoler 😂</p>
+        <p class="lead mt-4">Venez rigoler 😂</p>
     </div>
 
     <!-- Scripts JavaScript (communs à toutes les pages) -->

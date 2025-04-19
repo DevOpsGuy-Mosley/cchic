@@ -152,14 +152,18 @@ a:hover {
     background-color: #666;
     color: #FF6F00;
 }
-.input-group-text.toggle-password.active i.fa-eye {
-    display: none;
+.input-group-text.toggle-password i.fa-eye,
+.input-group-text.toggle-password i.fa-eye-slash {
+    display: block;
 }
 .input-group-text.toggle-password i.fa-eye-slash {
     display: none;
 }
+.input-group-text.toggle-password.active i.fa-eye {
+    display: none;
+}
 .input-group-text.toggle-password.active i.fa-eye-slash {
-    display: inline-block;
+    display: block;
 }
 
 /* Styles responsives  */

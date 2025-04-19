@@ -208,15 +208,15 @@ try {
 
         .audio-title-date {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 15px;
+            gap: 5px;
             width: 100%;
         }
 
         .separator {
-            color: #888;
-            font-weight: normal;
+            display: none;
         }
 
         .audio-title {
@@ -232,15 +232,50 @@ try {
             font-size: 0.9em;
             text-align: center;
         }
+
+        @media (min-width: 768px) {
+            .audio-title-date {
+                flex-direction: row;
+                gap: 15px;
+            }
+
+            .separator {
+                display: inline;
+                color: #888;
+                font-weight: normal;
+            }
+        }
+
+        .presentation-frame {
+            width: 100%;
+            max-width: 600px;
+            margin: 10px auto;
+            padding: 8px;
+            background-color: #212121;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            min-height: auto;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .presentation-frame {
+                max-width: 90%;
+                margin: 5px auto;
+                padding: 5px;
+                border-radius: 6px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="app-container">
         <div class="profile-header">
+            <?php if (!$isOwnProfile): ?>
             <a href="home.php" class="back-button">
                 <i class="fas fa-arrow-left"></i>
-                Retour
             </a>
+            <?php endif; ?>
         </div>
 
         <header class="profile-header-container">
@@ -417,9 +452,11 @@ try {
                                 </div>
                             </div>
                             <div class="audio-actions">
+                                <?php if ($isOwnProfile): ?>
                                 <button class="delete-audio-button" onclick="deleteAudio(this)" title="Supprimer cet audio">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
+                                <?php endif; ?>
                             </div>
                         </div>
                     <?php endforeach; ?>

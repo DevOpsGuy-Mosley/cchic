@@ -3,6 +3,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 require 'database.php';
+require 'TokenManager.php';
 
 // Récupérer le message d'erreur de session si présent
 if (isset($_SESSION['error_message'])) {
@@ -38,21 +39,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $error = "Votre compte est désactivé. Veuillez contacter l'administrateur.";
                         }
                     } else {
+                        // Génération du token
+                        $token = TokenManager::generateToken($user["id"]);
+                        
+                        // Stockage des informations de session
+                        $_SESSION['user_id'] = $user["id"];
+                        $_SESSION["nom_prenoms"] = $user["nom_prenoms"];
+                        $_SESSION["email"] = $user["email"];
+                        $_SESSION['is_admin'] = ($user["is_admin"] == 1);
+                        $_SESSION['token'] = $token;
+
+                        // Stockage du token dans un cookie sécurisé
+                        setcookie('auth_token', $token, [
+                            'expires' => time() + 3600,
+                            'path' => '/',
+                            'domain' => '',
+                            'secure' => true,
+                            'httponly' => true,
+                            'samesite' => 'Strict'
+                        ]);
+
                         // 2. Maintenant que le mdp est vérifié, vérifier si c'est un admin
                         if ($user["is_admin"] == 1) {
                             // C'est un admin
-                            $_SESSION['user_id'] = $user["id"];
-                            $_SESSION["nom_prenoms"] = $user["nom_prenoms"];
-                            $_SESSION["email"] = $user["email"];
-                            $_SESSION['is_admin'] = true;
                             header("Location: ../admin/admin_dashboard.php");
                             exit();
                         } else {
                             // C'est un utilisateur normal
-                            $_SESSION['user_id'] = $user["id"];
-                            $_SESSION["nom_prenoms"] = $user["nom_prenoms"];
-                            $_SESSION["email"] = $user["email"];
-                            $_SESSION['is_admin'] = false;
                             header("Location: home.php");
                             exit();
                         }

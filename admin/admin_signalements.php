@@ -1014,24 +1014,19 @@ if ($DEBUG) {
                 <div class="chart-container">
                     <canvas id="reports-chart"></canvas>
                 </div>
-                <div class="legend-item">
-                        <span class="legend-color" style="background-color: rgba(255, 165, 0, 0.7);"></span>
-                        <span>Total : <?php echo $reportStats['total_reports'] ?? 0; ?></span>
-                </div>
-                <div class="chart-legend">
-                    <div class="legend-item">
-                        <span class="legend-color" style="background-color: rgba(255, 255, 255, 0.7);"></span>
-                        <span>Non traités: <?php echo $reportStats['unprocessed_reports'] ?? 0; ?></span>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-label">Total</span>
+                        <span class="stat-value"><?php echo $reportStats['total_reports'] ?? 0; ?></span>
                     </div>
-                    <div class="legend-item">
-                        <span class="legend-color" style="background-color: rgba(0, 0, 255, 0.7);"></span>
-                        <span>Traités: <?php echo $reportStats['processed_reports'] ?? 0; ?></span>
+                    <div class="stat-item">
+                        <span class="stat-label">Traités</span>
+                        <span class="stat-value"><?php echo $reportStats['processed_reports'] ?? 0; ?></span>
                     </div>
-                    <div class="legend-item">
-                        <span class="legend-color" style="background-color: rgba(255, 0, 0, 0.7);"></span>
-                        <span>Supprimés: <?php echo $reportStats['deleted_reports'] ?? 0; ?></span>
+                    <div class="stat-item">
+                        <span class="stat-label">Supprimés</span>
+                        <span class="stat-value"><?php echo $reportStats['deleted_reports'] ?? 0; ?></span>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -1218,28 +1213,29 @@ if ($DEBUG) {
             // Récupération des données
             const processedReports = <?php echo $reportStats['processed_reports'] ?? 0; ?>;
             const deletedReports = <?php echo $reportStats['deleted_reports'] ?? 0; ?>;
-            const unprocessedReports = <?php echo $reportStats['unprocessed_reports'] ?? 0; ?>;
+            const totalReports = <?php echo $reportStats['total_reports'] ?? 0; ?>;
             
             // Création du graphique
             window.reportsChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: ['Non traités', 'Traités', 'Supprimés'],
+                    labels: ['Total', 'Traités', 'Supprimés'],
                     datasets: [{
-                        data: [unprocessedReports, processedReports, deletedReports],
+                        data: [totalReports, processedReports, deletedReports],
                         backgroundColor: [
-                            'rgba(255, 255, 255, 0.7)',  // Blanc pour non traités
+                            'rgba(255, 165, 0, 0.7)',    // Orange pour total
                             'rgba(0, 0, 255, 0.7)',      // Bleu pour traités
                             'rgba(255, 0, 0, 0.7)'       // Rouge pour supprimés
                         ],
                         borderColor: [
-                            'rgba(255, 255, 255, 1)',
+                            'rgba(255, 165, 0, 1)',
                             'rgba(0, 0, 255, 1)',
                             'rgba(255, 0, 0, 1)'
                         ],
                         borderWidth: 1,
                         borderRadius: 6,
-                        barThickness: 30
+                        barThickness: 50,  // Augmentation de la largeur des barres
+                        maxBarThickness: 60
                     }]
                 },
                 options: {
@@ -1254,7 +1250,7 @@ if ($DEBUG) {
                                 label: function(context) {
                                     const label = context.label || '';
                                     const value = context.raw || 0;
-                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const total = context.dataset.data[0]; // Total est le premier élément
                                     const percentage = total > 0 ? Math.round((value / total) * 100) : 0;
                                     return `${label}: ${value} (${percentage}%)`;
                                 }
@@ -1267,7 +1263,11 @@ if ($DEBUG) {
                                 display: false
                             },
                             ticks: {
-                                color: 'rgba(255, 255, 255, 0.7)'
+                                color: 'rgba(255, 255, 255, 0.7)',
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
                             }
                         },
                         y: {
@@ -1276,7 +1276,10 @@ if ($DEBUG) {
                                 color: 'rgba(255, 255, 255, 0.1)'
                             },
                             ticks: {
-                                color: 'rgba(255, 255, 255, 0.7)'
+                                color: 'rgba(255, 255, 255, 0.7)',
+                                font: {
+                                    size: 14
+                                }
                             }
                         }
                     }
@@ -1289,13 +1292,9 @@ if ($DEBUG) {
          */
         function updateReportCounters(action) {
             // Récupérer les éléments HTML qui contiennent les compteurs
-            const totalElement = document.querySelector('.stats-card .stat-item:nth-child(1) .stat-value');
-            const processedElement = document.querySelector('.stats-card .stat-item:nth-child(2) .stat-value');
-            const deletedElement = document.querySelector('.stats-card .stat-item:nth-child(3) .stat-value');
-            
-            // Mettre à jour également le texte des légendes
-            const legendProcessed = document.querySelector('.chart-legend .legend-item:nth-child(1) span:last-child');
-            const legendDeleted = document.querySelector('.chart-legend .legend-item:nth-child(2) span:last-child');
+            const totalElement = document.querySelector('.stats-grid .stat-item:nth-child(1) .stat-value');
+            const processedElement = document.querySelector('.stats-grid .stat-item:nth-child(2) .stat-value');
+            const deletedElement = document.querySelector('.stats-grid .stat-item:nth-child(3) .stat-value');
             
             // Vérifier l'existence des éléments essentiels
             if (!totalElement || !processedElement || !deletedElement) {
@@ -1311,12 +1310,7 @@ if ($DEBUG) {
             // Mise à jour des compteurs selon l'action
             if (action === 'process') {
                 // Augmenter les traités
-                const newProcessed = processedReports + 1;
-                processedElement.textContent = newProcessed;
-                
-                if (legendProcessed) {
-                    legendProcessed.textContent = `Traités: ${newProcessed}`;
-                }
+                processedElement.textContent = processedReports + 1;
                 
                 // Mettre à jour le graphique
                 if (window.reportsChart) {
@@ -1325,12 +1319,7 @@ if ($DEBUG) {
                 }
             } else if (action === 'delete') {
                 // Augmenter les supprimés
-                const newDeleted = deletedReports + 1;
-                deletedElement.textContent = newDeleted;
-                
-                if (legendDeleted) {
-                    legendDeleted.textContent = `Supprimés: ${newDeleted}`;
-                }
+                deletedElement.textContent = deletedReports + 1;
                 
                 // Mettre à jour le graphique
                 if (window.reportsChart) {
